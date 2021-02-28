@@ -1,4 +1,6 @@
 import React from 'react';
+import {Container} from '@material-ui/core';
+
 
 interface IProps {
     todos: string[]
@@ -7,8 +9,8 @@ interface IProps {
 export const DisplayTodo:React.FC<IProps> = (props:IProps) => {
     const {todos}=props
     return (
-        <React.Fragment>
+        <Container maxWidth="lg" style={{border: '1px solid red'}}>
             {todos.map((_,idx)=><p key={idx}>{_} <button>Delete</button></p>)}
-        </React.Fragment>
+        </Container>
     )
 }
