@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import { InputTodo } from './InputTodo';
 import { DisplayTodo } from './DisplayTodo';
 
@@ -9,7 +9,8 @@ export const Container: React.FC<any> = () => {
 	const [todos, setToDos] = useState([]);
 	const [copyOfToDos, setCopyOfToDos] = useState([]);
 	const [isToDoAdded, setIsToDoAdded] = useState(false);
-	const [isToDoSearched, setIsToDoSearched] = useState(false);
+    const [isToDoSearched, setIsToDoSearched] = useState(false);
+    
 	useEffect(() => {
 		isToDoAdded && updateToDoList();
 	}, [isToDoAdded]);
@@ -19,7 +20,9 @@ export const Container: React.FC<any> = () => {
 		setCopyOfToDos([...todos, inputValue]);
 		setIsToDoAdded(false);
 		setInputValue('');
-	};
+    };
+    
+ 
 
 	useEffect(() => {
 		isToDoSearched && filterToDos();
