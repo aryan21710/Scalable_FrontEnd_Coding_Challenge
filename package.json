@@ -5,7 +5,7 @@
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve",
-    "build:dev": "webpack --watch",
+    "build:dev": "rm -rf public/main.* ; webpack --watch",
     "cypress": "cypress run --browser chrome",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
