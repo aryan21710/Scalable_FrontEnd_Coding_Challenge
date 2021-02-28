@@ -1,0 +1,105 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "plugins": [
+      "react",
+      "jest",
+      "react-redux",
+      "prettier",
+      "react-app"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:flowtype/recommended",
+      "plugin:react-redux/recommended",
+      "prettier"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "rules": {
+      "react-redux/connect-prefer-named-arguments": 2,
+      "jest/no-identical-title": "error",
+      "no-console": "error",
+      "no-trailing-spaces": "warn",
+      "object-curly-spacing": [
+        "warn",
+        "always"
+      ],
+      "quotes": [
+        "warn",
+        "single"
+      ],
+      "prefer-template": "warn",
+      "semi": "warn",
+      "quote-props": [
+        "warn",
+        "consistent"
+      ],
+      "arrow-body-style": "warn",
+      "comma-spacing": "warn",
+      "space-infix-ops": [
+        "warn",
+        {
+          "int32Hint": true
+        }
+      ],
+      "max-len": "off",
+      "prefer-promise-reject-errors": "off",
+      "object-curly-newline": [
+        "error",
+        {
+          "consistent": true
+        }
+      ],
+      "react/jsx-filename-extension": "off",
+      "react/jsx-indent-props": [
+        1,
+        4
+      ],
+      "react/forbid-prop-types": [
+        "error",
+        {
+          "forbid": [
+            "any"
+          ]
+        }
+      ],
+      "react/display-name": "off",
+      "react/require-default-props": "warn",
+      //TODO: TURN ON THIS RULE
+      "react/sort-comp": "off",
+      "no-underscore-dangle": "off",
+      "consistent-return": "off",
+      "no-plusplus": "off",
+      "import/no-named-as-default": "off",
+      "react/prefer-stateless-function": "off",
+      "react/prop-types": 0,
+      "react/destructuring-assignment": "off",
+      "indent": [
+        2,
+        4
+      ],
+      "no-restricted-syntax": "off",
+      "no-param-reassign": "off",
+      "no-nested-ternary": "warn",
+      // later
+      "no-unused-vars": "warn",
+      "no-return-assign": "off"
+    }
+  }
+  
