@@ -6,20 +6,42 @@ import {myObj} from './common/constants';
 const App:React.FC = () => {
     const [count,setCount]=useState(0);
     const [inputValue,setInputValue]=useState('');
-    const [todo,setToDo]=useState([]);
+    const [search,setSearch]=useState('');
+    const [todos,setToDos]=useState([]);
+    const [copyOfToDos,setCopyOfToDos]=useState([]);
+
     const [isToDoAdded, setIsToDoAdded]=useState(false)
+    const [isToDoSearched, setIsToDoSearched]=useState(false)
 
     useEffect(()=>{
         isToDoAdded && updateToDoList()
     },[isToDoAdded])
 
     const updateToDoList=()=>{
-        setToDo([...todo,inputValue])
+        setToDos([...todos,inputValue])
+        setCopyOfToDos([...todos,inputValue])
         setIsToDoAdded(false)
         setInputValue('')
     }
 
+    useEffect(()=>{
+        isToDoSearched && filterToDos()
+    },[isToDoSearched])
 
+    useEffect(()=>{
+        if (search.length === 0 && !isToDoAdded) {
+            setToDos([...copyOfToDos])
+            setIsToDoAdded(false)
+        } 
+    },[search])
+
+    const onSearchToDO:(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void = ()=>setIsToDoSearched(true)
+
+    const filterToDos=()=>{
+        const filteredToDo=todos.filter((todo)=>todo.includes(search))
+        setIsToDoSearched(false)
+        filteredToDo.length > 0 && setToDos([...filteredToDo])
+    }
 
     const onAddToDo:(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void=(e)=>{
         e.preventDefault();
@@ -27,6 +49,7 @@ const App:React.FC = () => {
     }
     const onChangeHandler:(event: React.ChangeEvent<HTMLInputElement>) => void = (e)=>setInputValue(e.target.value);
     const onIncrementCount:(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void=()=>setCount(count+1);
+    const onSearchHandler:(event: React.ChangeEvent<HTMLInputElement>) => void = (e)=>setSearch(e.target.value.trim());
 
 
 	return (
@@ -49,7 +72,10 @@ const App:React.FC = () => {
             <input placeholder="Add Todo" value={inputValue} onChange={onChangeHandler}/>
             <button disabled={inputValue.length===0} onClick={onAddToDo}>ADD</button>
             <br></br>
-            {todo.map((_,idx)=><p>{_} <button>Delete</button></p>)}
+            <input placeholder="Search ToDo" value={search} onChange={onSearchHandler}/>
+            <button disabled={search.length===0} onClick={onSearchToDO}>Search</button>
+
+            {todos.map((_,idx)=><p>{_} <button>Delete</button></p>)}
 
 		</div>
 	);
