@@ -20,12 +20,15 @@ const App:React.FC = () => {
     }
 
 
+
     const onAddToDo:(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void=(e)=>{
         e.preventDefault();
         setIsToDoAdded(true)
     }
     const onChangeHandler:(event: React.ChangeEvent<HTMLInputElement>) => void = (e)=>setInputValue(e.target.value);
-    const onIncrementCount:(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void=()=>setCount(count+1)
+    const onIncrementCount:(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void=()=>setCount(count+1);
+
+
 	return (
 		<div>
 			<p>{`output of sum is :- ${sum([10, 20, 30, 40])}`}</p>
@@ -46,7 +49,7 @@ const App:React.FC = () => {
             <input placeholder="Add Todo" value={inputValue} onChange={onChangeHandler}/>
             <button disabled={inputValue.length===0} onClick={onAddToDo}>ADD</button>
             <br></br>
-            {todo.map((_)=><p>{_}</p>)}
+            {todo.map((_,idx)=><p>{_} <button>Delete</button></p>)}
 
 		</div>
 	);
