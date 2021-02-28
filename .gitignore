@@ -1,0 +1,7 @@
+/node_modules
+/build
+/.idea
+*.mp4
+*hot-update*
+bundle.js
+
