@@ -12,10 +12,10 @@ interface ICone {
 }
 
 interface ItimeSeries {
-    median: number,
-    good: number,
-    bad: number,
-    month: number,
+	median: number;
+	good: number;
+	bad: number;
+	month: number;
 }
 
 const Table = () => {
@@ -24,21 +24,22 @@ const Table = () => {
 	const onChangeRiskLevel: (newRiskLevel: React.SetStateAction<number>) => void = (
 		newRiskLevel: React.SetStateAction<number>
 	) => setRiskLevel(newRiskLevel);
-    useFetchConesApi(setCone, riskLevel);
-    
-    const timeSeries:ItimeSeries[] = calculateTimeSeries({
-        years: 10,
-        mu: cone.mu,
-        sigma: cone.sigma,
-        fee: 0.01,
-        initialSum: 10000,
-        monthlySum: 200,
-    });
+	useFetchConesApi(setCone, riskLevel);
+
+	const timeSeries: ItimeSeries[] = calculateTimeSeries({
+		years: 10,
+		mu: cone.mu,
+		sigma: cone.sigma,
+		fee: 0.01,
+		initialSum: 10000,
+		monthlySum: 200,
+	});
+
 
 	return (
 		<Box style={outerWrapper}>
 			<Box style={innerWrapper}>
-				<GridDisplay timeSeries={timeSeries}/>
+				<GridDisplay timeSeries={timeSeries} />
 			</Box>
 		</Box>
 	);
