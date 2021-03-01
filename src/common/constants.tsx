@@ -6,6 +6,15 @@ export const myObj = {
     jobs: ['INTL', 'GEEKTRUST', 'SIMARCORP', 'ARISTA NETWORKS'],
 };
 
+export interface ITimeSeriesArgs {
+	years: number;
+	mu: number;
+	sigma: number;
+	fee: number;
+	initialSum: number;
+	monthlySum: number;
+}
+
 export const columnHeaders = [
     {
         headerName: 'Month',

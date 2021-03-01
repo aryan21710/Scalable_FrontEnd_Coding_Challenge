@@ -4,9 +4,16 @@ import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 import { columnHeaders } from '../../common/constants';
 
-const timeSeries:string[]=[]
 
-const GridDisplay = () => (
+interface ItimeSeries {
+    median: number,
+    good: number,
+    bad: number,
+    month: number,
+}
+
+
+const GridDisplay = ({timeSeries}:any) => (
     <div
         id="myGrid"
         style={{
