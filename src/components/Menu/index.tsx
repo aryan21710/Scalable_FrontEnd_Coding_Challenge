@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { innerWrapper, outerWrapper } from './styles';
-import {  Box } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 const Menu = () => (
 	<Box style={outerWrapper}>

@@ -1,27 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { Box } from '@material-ui/core';
 import { innerWrapper, outerWrapper } from './styles';
 import { calculateTimeSeries } from '../../common/utils';
-import { ItimeSeries,maxRiskLevel, minRiskLevel} from '../../common/constants';
+import { ItimeSeries } from '../../common/constants';
 import GridDisplay from './GridDisplay';
-import { useFetchConesApi } from '../../customHooks/useFetchConesApi';
-import RiskLevelSelector from '../RiskLevelSelector';
-
-
-interface ICone {
-	mu: number;
-	riskLevel: number;
-	sigma: number;
-}
+import { AppContext } from '../../context/appContext';
 
 const Table = () => {
-	const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
-	const [riskLevel, setRiskLevel] = useState<number>(minRiskLevel);
-	const onChangeRiskLevel: (newRiskLevel: React.SetStateAction<number>) => void = (
-		newRiskLevel: React.SetStateAction<number>
-	) => setRiskLevel(newRiskLevel);
-	useFetchConesApi(setCone, riskLevel);
-
+	const {cone}=useContext(AppContext);
 	const timeSeries: ItimeSeries[] = calculateTimeSeries({
 		years: 10,
 		mu: cone.mu,
@@ -33,7 +19,6 @@ const Table = () => {
 
 	return (
 		<Box style={outerWrapper}>
-			<RiskLevelSelector onChangeRiskLevel={onChangeRiskLevel} maxRiskLevel={maxRiskLevel}/>
 			<Box style={innerWrapper}>
 				<GridDisplay timeSeries={timeSeries} />
 			</Box>

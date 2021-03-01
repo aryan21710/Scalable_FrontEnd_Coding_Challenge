@@ -1,4 +1,4 @@
-import { ICalculateTimeSeries } from '../common/constants';
+import { ICalculateTimeSeries } from './constants';
 import {Iobj} from './tsInterfaces';
 
 export const sum = (a: Array<number>): number => {
@@ -47,3 +47,17 @@ export const calculateTimeSeries = ({ years, mu, sigma, fee, initialSum, monthly
 		};
 	});
 };
+
+interface ICordinates {
+	x: number,
+	y: number,
+
+}
+
+
+interface IAllSeries {
+	median: [],
+	upper95: [],
+	lower05: []
+}
+

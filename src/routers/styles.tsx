@@ -1,6 +1,5 @@
 import vault from '../assets/images/vault.jpg'
-export const styles = {
-    mainWrapper: {
+export const mainWrapper: React.CSSProperties= {
         padding:'0',
         margin:'0',
         width:'100vw',
@@ -10,4 +9,3 @@ export const styles = {
         backgroundPosition:'center',
         backgroundSize:'cover'
     }
-}
