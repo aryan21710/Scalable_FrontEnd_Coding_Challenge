@@ -1,4 +1,3 @@
-
 export interface Iobj {
 	name: string;
 	lname: string;
