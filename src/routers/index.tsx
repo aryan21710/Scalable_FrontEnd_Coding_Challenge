@@ -3,9 +3,7 @@ import Home from '../components/Home';
 import Menu from '../components/Menu';
 import Header from '../components/Header';
 import Table from '../components/Table';
-
 import { styles } from './styles';
-
 import { Box } from '@material-ui/core';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 

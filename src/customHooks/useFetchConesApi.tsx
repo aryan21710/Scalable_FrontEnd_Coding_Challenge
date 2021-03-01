@@ -5,6 +5,7 @@ export const useFetchConesApi = async (setCone: React.Dispatch<React.SetStateAct
     try {
         const response = await axios.get(APIURL);
         if (response) {
+            console.log('response.data',response.data)
             const filteredCone:Array<object> = response.data.filter((cone: { riskLevel: number; }) => cone.riskLevel === riskLevel)[0];
             response && setCone({ ...filteredCone });
         }

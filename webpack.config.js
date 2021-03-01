@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const cones = require('./src/common/cones.json');
+
 
 module.exports = {
     entry: ['babel-polyfill', './src/index.tsx'],
@@ -26,6 +28,11 @@ module.exports = {
         hot: true,
         open: true,
         historyApiFallback: true,
+        before: function(app) {
+            app.get('/api/cones', function(req, res) {
+                res.json(cones);
+            });
+        },
     },
     module: {
         rules: [
