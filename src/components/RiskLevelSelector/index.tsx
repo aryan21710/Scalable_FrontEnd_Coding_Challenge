@@ -9,31 +9,31 @@ interface IProps {
 }
 
 const RiskLevelSelector = () => {
-	const {  maxRiskLevel, onChangeRiskLevel } = useContext(AppContext);
+    const {  maxRiskLevel, onChangeRiskLevel } = useContext(AppContext);
 
-	const defaultRisk = 10;
+    const defaultRisk = 10;
 
-	const options = [];
-	for (let k = 1; k <= maxRiskLevel; ++k) {
-		options.push(
-			<option key={k} value={k}>
-				{k}
-			</option>
-		);
-	}
+    const options = [];
+    for (let k = 1; k <= maxRiskLevel; ++k) {
+        options.push(
+            <option key={k} value={k}>
+                {k}
+            </option>
+        );
+    }
 
-	const onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
-		const riskLevel = parseInt(event.target.value);
-		onChangeRiskLevel(riskLevel);
-	};
-	return (
-		<Box style={outerWrapper}>
-			<label>Risk level:</label>
-			<select onChange={onChange} defaultValue={defaultRisk}>
-				{options}
-			</select>
-		</Box>
-	);
+    const onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
+        const riskLevel = parseInt(event.target.value);
+        onChangeRiskLevel(riskLevel);
+    };
+    return (
+        <Box style={outerWrapper}>
+            <label>Risk level:</label>
+            <select onChange={onChange} defaultValue={defaultRisk}>
+                {options}
+            </select>
+        </Box>
+    );
 };
 
 export default RiskLevelSelector;

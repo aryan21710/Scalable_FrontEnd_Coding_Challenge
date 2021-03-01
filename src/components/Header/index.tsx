@@ -1,5 +1,5 @@
 import React from 'react';
-import { header,outerWrapper } from './styles';
+import { header, outerWrapper } from './styles';
 import {  Box, Typography } from '@material-ui/core';
 
 const Header = () => (

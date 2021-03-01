@@ -1,7 +1,7 @@
 export const outerWrapper: React.CSSProperties = {
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     margin: '2vh auto 0vh auto',
     width: '15vw',
     padding: '0.5vh 0.5vw',

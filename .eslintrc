@@ -1,0 +1,55 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"rules": {
+		"no-console": "error",
+		"no-trailing-spaces": "warn",
+		"object-curly-spacing": ["warn", "always"],
+		"quotes": ["warn", "single"],
+		"prefer-template": "warn",
+		"semi": "warn",
+		"quote-props": ["warn", "consistent"],
+		"arrow-body-style": "warn",
+		"comma-spacing": "warn",
+		"space-infix-ops": [
+			"warn",
+			{
+				"int32Hint": true
+			}
+		],
+		"max-len": "off",
+		"prefer-promise-reject-errors": "off",
+		"object-curly-newline": [
+			"error",
+			{
+				"consistent": true
+			}
+		],
+		"react/jsx-filename-extension": "off",
+		"react/display-name": "off",
+		"react/sort-comp": "off",
+		"no-underscore-dangle": "off",
+		"consistent-return": "off",
+		"no-plusplus": "off",
+		"import/no-named-as-default": "off",
+		"react/prefer-stateless-function": "off",
+		"react/prop-types": 0,
+		"react/destructuring-assignment": "off",
+		"indent": [2, 4],
+		"no-restricted-syntax": "off",
+		"no-param-reassign": "off",
+		"no-nested-ternary": "warn",
+		// later
+		"no-unused-vars": "warn",
+		"no-return-assign": "off"
+	}
+}

@@ -1,5 +1,5 @@
-export const maxRiskLevel=25;
-export const minRiskLevel=3;
+export const maxRiskLevel = 25;
+export const minRiskLevel = 3;
 
 export interface ICalculateTimeSeries {
 	years: number;
