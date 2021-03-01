@@ -2,14 +2,7 @@ import React from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
-import { columnHeaders } from '../../common/constants';
-
-interface ItimeSeries {
-	median: number;
-	good: number;
-	bad: number;
-	month: number;
-}
+import { columnHeaders,ItimeSeries } from '../../common/constants';
 
 interface IProps {
 	timeSeries: ItimeSeries[];

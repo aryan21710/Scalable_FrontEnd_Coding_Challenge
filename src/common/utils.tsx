@@ -1,4 +1,4 @@
-import { ITimeSeriesArgs } from '../common/constants';
+import { ICalculateTimeSeries } from '../common/constants';
 import {Iobj} from './tsInterfaces';
 
 export const sum = (a: Array<number>): number => {
@@ -12,7 +12,7 @@ export const displayObj = (myObj: Iobj): string => {
 	return `${name}${lname} is ${age} years old. He works as ${profession}. He worked in following companies:- ${jobs}`;
 };
 
-export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ITimeSeriesArgs) => {
+export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalculateTimeSeries) => {
 	let yearlyReturn = mu - fee;
 	let monthlyReturn = yearlyReturn / 12;
 	let month = years * 12;
@@ -31,7 +31,7 @@ export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ITime
 	};
 };
 
-export const calculateTimeSeries = ({ years, mu, sigma, fee, initialSum, monthlySum }: ITimeSeriesArgs) => {
+export const calculateTimeSeries = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalculateTimeSeries) => {
 	const series = [];
 
 	for (let k = 0; k <= 12 * years; ++k) {

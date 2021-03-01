@@ -6,13 +6,20 @@ export const myObj = {
     jobs: ['INTL', 'GEEKTRUST', 'SIMARCORP', 'ARISTA NETWORKS'],
 };
 
-export interface ITimeSeriesArgs {
+export interface ICalculateTimeSeries {
 	years: number;
 	mu: number;
 	sigma: number;
 	fee: number;
 	initialSum: number;
 	monthlySum: number;
+}
+
+export interface ItimeSeries {
+	median: number;
+	good: number;
+	bad: number;
+	month: number;
 }
 
 export const columnHeaders = [

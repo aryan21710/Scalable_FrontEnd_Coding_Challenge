@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box } from '@material-ui/core';
 import { innerWrapper, outerWrapper } from './styles';
 import { calculateTimeSeries } from '../../common/utils';
+import { ItimeSeries } from '../../common/constants';
 import GridDisplay from './GridDisplay';
 import { useFetchConesApi } from '../../customHooks/useFetchConesApi';
 
@@ -9,13 +10,6 @@ interface ICone {
 	mu: number;
 	riskLevel: number;
 	sigma: number;
-}
-
-interface ItimeSeries {
-	median: number;
-	good: number;
-	bad: number;
-	month: number;
 }
 
 const Table = () => {
