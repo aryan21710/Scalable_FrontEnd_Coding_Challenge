@@ -3,7 +3,7 @@ import { InputTodo } from './InputTodo';
 import { DisplayTodo } from './DisplayTodo';
 
 
-export const Container: React.FC<any> = () => {
+export const ParentContainer: React.FC<any> = () => {
 	const [inputValue, setInputValue] = useState('');
 	const [search, setSearch] = useState('');
 	const [todos, setToDos] = useState([]);
