@@ -6,6 +6,8 @@ import Table from '../components/Table';
 import { styles } from './styles';
 import { Box } from '@material-ui/core';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Footer from '../components/Footer';
+
 
 const AppRoutes = () => (
 	<BrowserRouter>
@@ -15,8 +17,8 @@ const AppRoutes = () => (
 			<Switch>
 				<Route exact path="/" component={Home} />
 				<Route path="/table" component={() => <Table />} />
-
 			</Switch>
+			<Footer/>
 		</Box>
 	</BrowserRouter>
 );
