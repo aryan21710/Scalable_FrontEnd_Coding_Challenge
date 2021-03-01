@@ -10,10 +10,8 @@ export const outerWrapper: React.CSSProperties = {
 
 export const innerWrapper: React.CSSProperties = {
 	width: '70vw',
-	height: '75vh',
-	marginTop: ' 2vh',
+	height: '70vh',
 	background: ' rgba(0,0,0,0.8)',
-	overflow: ' auto',
 	marginLeft: ' auto',
 	marginRight: ' auto',
 };
@@ -21,9 +19,7 @@ export const innerWrapper: React.CSSProperties = {
 
 export const chart:React.CSSProperties =  {
     width:'70vw',
-    height:'75vh',
-    marginTop: '2vh',
-    overflow: 'auto',
+    height:'70vh',
     marginLeft: 'auto',
     marginRight: 'auto',
 }

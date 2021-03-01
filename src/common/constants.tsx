@@ -1,11 +1,3 @@
-export const myObj = {
-    name: 'aryan',
-    lname: 'sharma',
-    age: 41,
-    profession: 'FrontEnd Web Developer',
-    jobs: ['INTL', 'GEEKTRUST', 'SIMARCORP', 'ARISTA NETWORKS'],
-};
-
 export const maxRiskLevel=25;
 export const minRiskLevel=3;
 
@@ -23,6 +15,11 @@ export interface ItimeSeries {
 	good: number;
 	bad: number;
 	month: number;
+}
+
+export interface IChartCordinates {
+	x: undefined | number;
+	y: undefined | number;
 }
 
 export const columnHeaders = [

@@ -1,21 +1,10 @@
-import { ICalculateTimeSeries } from './constants';
-import {Iobj} from './tsInterfaces';
-
-export const sum = (a: Array<number>): number => {
-	return a.reduce((acc, cum, idx) => {
-		return acc + cum;
-	}, 0);
-};
-
-export const displayObj = (myObj: Iobj): string => {
-	const { name, lname, age, profession, jobs } = myObj;
-	return `${name}${lname} is ${age} years old. He works as ${profession}. He worked in following companies:- ${jobs}`;
-};
+import { ICalculateTimeSeries, IChartCordinates } from './constants';
 
 export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalculateTimeSeries) => {
 	let yearlyReturn = mu - fee;
 	let monthlyReturn = yearlyReturn / 12;
 	let month = years * 12;
+	let x: undefined = undefined;
 
 	let median =
 		initialSum * Math.exp(yearlyReturn * years) +
@@ -28,10 +17,11 @@ export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalc
 		median: median,
 		upper95: Math.exp(Math.log(median) + Math.sqrt(years) * sigma * 1.645),
 		lower05: Math.exp(Math.log(median) - Math.sqrt(years) * sigma * 1.645),
+		x,
 	};
 };
 
-export const calculateTimeSeries = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalculateTimeSeries) => {
+export const calculateTimeSeriesForTable = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalculateTimeSeries) => {
 	const series = [];
 
 	for (let k = 0; k <= 12 * years; ++k) {
@@ -48,16 +38,22 @@ export const calculateTimeSeries = ({ years, mu, sigma, fee, initialSum, monthly
 	});
 };
 
-interface ICordinates {
-	x: number,
-	y: number,
 
-}
+export const calculateTimeSeriesForChart = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalculateTimeSeries) => {
+	var series = [];
+	for (let k = 0; k <= 12 * years; ++k) {
+		series.push(mapDate({ years: k / 12, mu, sigma, fee, initialSum, monthlySum }));
+	}
 
+	const median: IChartCordinates[] = [];
+	const upper95: IChartCordinates[] = [];
+	const lower05: IChartCordinates[] = [];
 
-interface IAllSeries {
-	median: [],
-	upper95: [],
-	lower05: []
-}
+	for (let k = 0; k < series.length; k++) {
+		median.push({ y: series[k].median, x: series[k]?.x });
+		upper95.push({ y: series[k].upper95, x: series[k]?.x });
+		lower05.push({ y: series[k].lower05, x: series[k].x });
+	}
 
+	return { median, upper95, lower05 };
+};

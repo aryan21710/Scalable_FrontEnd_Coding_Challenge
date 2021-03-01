@@ -41,6 +41,7 @@ const AppRoutes = () => {
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route exact path="/table" component={() => <Table />} />
+						<Route exact path="/chart" component={() => <Chart />} />
 					</Switch>
 					<Footer />
 				</AppContext.Provider>
