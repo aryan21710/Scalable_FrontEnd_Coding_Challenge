@@ -58,4 +58,5 @@ module.exports = {
         },
         extensions: ['.ts', '.tsx', '.js'],
     },
+    devtool: 'eval-cheap-source-map',
 };

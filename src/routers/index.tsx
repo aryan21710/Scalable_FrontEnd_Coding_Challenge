@@ -2,6 +2,7 @@ import React from 'react';
 import Home from '../components/Home';
 import Menu from '../components/Menu';
 import Header from '../components/Header';
+import Table from '../components/Table';
 
 import { styles } from './styles';
 
@@ -15,6 +16,8 @@ const AppRoutes = () => (
             <Menu/>
 			<Switch>
 				<Route exact path="/" component={Home} />
+				<Route path="/table" component={() => <Table />} />
+
 			</Switch>
 		</Box>
 	</BrowserRouter>
