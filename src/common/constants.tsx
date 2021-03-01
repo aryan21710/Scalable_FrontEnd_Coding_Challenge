@@ -6,6 +6,9 @@ export const myObj = {
     jobs: ['INTL', 'GEEKTRUST', 'SIMARCORP', 'ARISTA NETWORKS'],
 };
 
+export const maxRiskLevel=25;
+export const minRiskLevel=3;
+
 export interface ICalculateTimeSeries {
 	years: number;
 	mu: number;

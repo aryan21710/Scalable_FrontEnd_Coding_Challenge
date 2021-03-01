@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Box } from '@material-ui/core';
 import { innerWrapper, outerWrapper } from './styles';
 import { calculateTimeSeries } from '../../common/utils';
-import { ItimeSeries } from '../../common/constants';
+import { ItimeSeries,maxRiskLevel, minRiskLevel} from '../../common/constants';
 import GridDisplay from './GridDisplay';
 import { useFetchConesApi } from '../../customHooks/useFetchConesApi';
+import RiskLevelSelector from '../RiskLevelSelector';
+
 
 interface ICone {
 	mu: number;
@@ -14,7 +16,7 @@ interface ICone {
 
 const Table = () => {
 	const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
-	const [riskLevel, setRiskLevel] = useState<number>(3);
+	const [riskLevel, setRiskLevel] = useState<number>(minRiskLevel);
 	const onChangeRiskLevel: (newRiskLevel: React.SetStateAction<number>) => void = (
 		newRiskLevel: React.SetStateAction<number>
 	) => setRiskLevel(newRiskLevel);
@@ -29,9 +31,9 @@ const Table = () => {
 		monthlySum: 200,
 	});
 
-
 	return (
 		<Box style={outerWrapper}>
+			<RiskLevelSelector onChangeRiskLevel={onChangeRiskLevel} maxRiskLevel={maxRiskLevel}/>
 			<Box style={innerWrapper}>
 				<GridDisplay timeSeries={timeSeries} />
 			</Box>
