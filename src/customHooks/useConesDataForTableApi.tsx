@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import { APIURL,ICone } from '../common/constants';
+import { ICone } from '../common/interfaces';
+import { APIURL } from '../common/constants';
+
 
 export const useConesDataForTableApi = async (
     setCone: React.Dispatch<React.SetStateAction<object>>,
@@ -13,7 +15,6 @@ export const useConesDataForTableApi = async (
 
     const callBackendApi = async () => {
         try {
-
             const response = await axios.get(APIURL);
             if (response) {
                 const filteredCone: ICone[] = response.data.filter(

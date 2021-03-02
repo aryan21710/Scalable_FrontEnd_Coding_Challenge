@@ -4,11 +4,10 @@ import { Box } from '@material-ui/core';
 import { chart, innerWrapper, outerWrapper } from './styles';
 import { AppContext } from '../../context/appContext';
 import { calculateTimeSeriesForChart } from '../../common/utils';
-import { IChartCordinates } from '../../common/constants';
+import { IChartCordinates } from '../../common/interfaces';
 
 const Chart = () => {
     const { riskLevel, cones } = useContext(AppContext);
-    console.log('riskLevel, cones',riskLevel, cones);
     const canvasRef = useRef(null);
     useEffect(() => {
         cones.length > 0 && drawChart();
@@ -38,21 +37,24 @@ const Chart = () => {
                 {
                     data: dataGood,
                     label: 'Good performance',
-                    borderColor: 'rgba(100, 255, 100, 0.2)',
+                    borderColor: 'red',
+                    borderWidth: 2,
                     fill: false,
                     pointRadius: 0,
                 },
                 {
                     data: dataMedian,
                     label: 'Median performance',
-                    borderColor: 'rgba(100, 100, 100, 0.2)',
+                    borderColor: 'green',
+                    borderWidth: 2,
                     fill: false,
                     pointRadius: 0,
                 },
                 {
                     data: dataBad,
                     label: 'Bad performance',
-                    borderColor: 'rgba(255, 100, 100, 0.2)',
+                    borderColor: 'yellow',
+                    borderWidth: 2,
                     fill: false,
                     pointRadius: 0,
                 },

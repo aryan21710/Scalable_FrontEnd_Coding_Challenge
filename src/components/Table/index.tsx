@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Box } from '@material-ui/core';
 import { innerWrapper, outerWrapper } from './styles';
 import { calculateTimeSeriesForTable } from '../../common/utils';
-import { ItimeSeries } from '../../common/constants';
+import { ItimeSeries } from '../../common/interfaces';
 import GridDisplay from './GridDisplay';
 import { AppContext } from '../../context/appContext';
 
