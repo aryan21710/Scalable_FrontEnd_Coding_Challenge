@@ -12,8 +12,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { useConesDataForTableApi } from '../customHooks/useConesDataForTableApi';
 import RiskLevelSelector from '../components/RiskLevelSelector';
+import YearSelector from '../components/YearSelector';
 import InitialInvestmentSumSelector from '../components/InitialInvestmentSumSelector';
-
 import { AppContext } from '../context/appContext';
 
 const AppRoutes = () => {
@@ -21,11 +21,17 @@ const AppRoutes = () => {
 	const [cones, setCones] = useState<ICone[]>([]);
 
 	const [riskLevel, setRiskLevel] = useState<number>(minRiskLevel);
-	const [initialSum, setInitialSum] = useState<number>(null);
+	const [years, setYears] = useState<number>(10);
+
+	const [initialSum, setInitialSum] = useState<number>(10000);
 
 	const onChangeRiskLevel: (newRiskLevel: React.SetStateAction<number>) => void = (
 		newRiskLevel: React.SetStateAction<number>
 	) => setRiskLevel(newRiskLevel);
+
+	const onChangeYear: (newYear: React.SetStateAction<number>) => void = (
+		newYear: React.SetStateAction<number>
+	) => setYears(newYear);
 
 	const onChangeInvestmentSum: (newInvestmentSum: React.SetStateAction<number>) => void = (
 		newInvestmentSum: React.SetStateAction<number>
@@ -38,11 +44,12 @@ const AppRoutes = () => {
 				<Header />
 				<Menu />
 				<AppContext.Provider
-					value={{ cone, cones, initialSum, riskLevel, maxRiskLevel, onChangeRiskLevel, onChangeInvestmentSum }}
+					value={{ cone, cones, initialSum, riskLevel, maxRiskLevel, onChangeRiskLevel, onChangeInvestmentSum, onChangeYear, years }}
 				>
 					<Box style={selectors}>
 						<RiskLevelSelector />
 						<InitialInvestmentSumSelector />
+						<YearSelector/>
 					</Box>
 
 					<Switch>

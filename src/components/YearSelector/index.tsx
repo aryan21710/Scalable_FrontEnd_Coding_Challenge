@@ -2,26 +2,24 @@ import React, { useContext } from 'react';
 import { outerWrapper } from './styles';
 import { Box } from '@material-ui/core';
 import { AppContext } from '../../context/appContext';
-import { ICone } from '../../common/interfaces';
 import { defaultSelectorValue } from '../../common/constants';
 
+const YearSelector = () => {
+	const { onChangeYear } = useContext(AppContext);
 
-const RiskLevelSelector = () => {
-	const { maxRiskLevel, onChangeRiskLevel, cones } = useContext(AppContext);
-
-	const options = cones.map((cone: ICone, idx: number) => (
-		<option key={idx} value={cone.riskLevel}>
-			{cone.riskLevel}
+	const options = Array.from({ length: 11 }, (v, idx) => idx).map((year, idx) => (
+		<option key={idx} value={year}>
+			{year}
 		</option>
 	));
 
 	const onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
-		const riskLevel = parseInt(event.target.value);
-		onChangeRiskLevel(riskLevel);
+		const newYear = parseInt(event.target.value);
+		onChangeYear(newYear);
 	};
 	return (
 		<Box style={outerWrapper}>
-			<label>Risk level:</label>
+			<label>Year Selector:</label>
 			<select onChange={onChange} defaultValue={defaultSelectorValue}>
 				{options}
 			</select>
@@ -29,4 +27,4 @@ const RiskLevelSelector = () => {
 	);
 };
 
-export default RiskLevelSelector;
+export default YearSelector;
