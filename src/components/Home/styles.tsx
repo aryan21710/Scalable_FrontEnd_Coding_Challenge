@@ -1,6 +1,6 @@
 export const outerWrapper: React.CSSProperties = {
     background: 'black',
-    height: '7vh',
+    height: '7.5vh',
     width: '100vw',
     position: 'absolute',
     top: '11vh',
