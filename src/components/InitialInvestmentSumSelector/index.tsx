@@ -19,13 +19,13 @@ const InitialInvestmentSumSelector = () => {
 				<TextField
 					type="number"
 					style={investmentSum}
-					placeholder="Enter Investment Sum"
+					placeholder="Enter Initial Investment Sum"
 					variant="outlined"
 					InputLabelProps={{
 						shrink: true,
 					}}
 					InputProps={{ inputProps: {  min: 0 } }}
-					value={initialSum===0 ? "Enter Investment Sum" : initialSum}
+					value={initialSum===0 ? "Enter Initial Investment Sum" : initialSum}
 					onChange={onChange}
 				/>
 			</form>
