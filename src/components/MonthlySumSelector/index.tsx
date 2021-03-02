@@ -1,16 +1,16 @@
 import React, { useContext } from 'react';
+import { outerWrapper, investmentSum } from './styles';
 import { Box, TextField } from '@material-ui/core';
 import { AppContext } from '../../context/appContext';
-import { outerWrapper, investmentSum } from './styles';
 
-const InitialInvestmentSumSelector = () => {
-	const { onChangeInvestmentSum, initialSum } = useContext(AppContext);
+const MonthlySumSelector = () => {
+	const { onChangeMonthlySum, monthlySum } = useContext(AppContext);
 
 	const onChange: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
 		if (parseInt(event.target.value) >= 0) {
-			onChangeInvestmentSum(event.target.value);
+			onChangeMonthlySum(event.target.value);
 		} else {
-			onChangeInvestmentSum(null);
+			onChangeMonthlySum(null);
 		}
 	};
 	return (
@@ -19,13 +19,13 @@ const InitialInvestmentSumSelector = () => {
 				<TextField
 					type="number"
 					style={investmentSum}
-					placeholder="Enter Investment Sum"
+					placeholder="Enter Monthly Sum"
 					variant="outlined"
 					InputLabelProps={{
 						shrink: true,
 					}}
-					InputProps={{ inputProps: {  min: 0 } }}
-					value={initialSum===0 ? "Enter Investment Sum" : initialSum}
+					InputProps={{ inputProps: { min: 1 } }}
+					value={monthlySum===0 ? "Enter Investment Sum" :monthlySum}
 					onChange={onChange}
 				/>
 			</form>
@@ -33,4 +33,4 @@ const InitialInvestmentSumSelector = () => {
 	);
 };
 
-export default InitialInvestmentSumSelector;
+export default MonthlySumSelector;

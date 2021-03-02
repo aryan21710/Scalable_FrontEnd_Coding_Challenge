@@ -7,7 +7,7 @@ import { defaultSelectorValue } from '../../common/constants';
 
 
 const RiskLevelSelector = () => {
-	const { maxRiskLevel, onChangeRiskLevel, cones } = useContext(AppContext);
+	const { onChangeRiskLevel, cones } = useContext(AppContext);
 
 	const options = cones.map((cone: ICone, idx: number) => (
 		<option key={idx} value={cone.riskLevel}>

@@ -8,11 +8,12 @@ import { mainWrapper,selectors } from './styles';
 import { Box } from '@material-ui/core';
 import { maxRiskLevel, minRiskLevel } from '../common/constants';
 import { ICone } from '../common/interfaces';
+import { defaultSelectorValue } from '../common/constants';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { useConesDataForTableApi } from '../customHooks/useConesDataForTableApi';
 import RiskLevelSelector from '../components/RiskLevelSelector';
-import YearSelector from '../components/YearSelector';
+import MonthlySumSelector from '../components/MonthlySumSelector';
 import InitialInvestmentSumSelector from '../components/InitialInvestmentSumSelector';
 import { AppContext } from '../context/appContext';
 
@@ -20,18 +21,18 @@ const AppRoutes = () => {
 	const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
 	const [cones, setCones] = useState<ICone[]>([]);
 
-	const [riskLevel, setRiskLevel] = useState<number>(minRiskLevel);
-	const [years, setYears] = useState<number>(10);
+	const [riskLevel, setRiskLevel] = useState<number>(defaultSelectorValue);
+	const [monthlySum, setMonthlySum] = useState<number>(0);
 
-	const [initialSum, setInitialSum] = useState<number>(10000);
+	const [initialSum, setInitialSum] = useState<number>(0);
 
 	const onChangeRiskLevel: (newRiskLevel: React.SetStateAction<number>) => void = (
 		newRiskLevel: React.SetStateAction<number>
 	) => setRiskLevel(newRiskLevel);
 
-	const onChangeYear: (newYear: React.SetStateAction<number>) => void = (
+	const onChangeMonthlySum: (newYear: React.SetStateAction<number>) => void = (
 		newYear: React.SetStateAction<number>
-	) => setYears(newYear);
+	) => setMonthlySum(newYear);
 
 	const onChangeInvestmentSum: (newInvestmentSum: React.SetStateAction<number>) => void = (
 		newInvestmentSum: React.SetStateAction<number>
@@ -44,12 +45,12 @@ const AppRoutes = () => {
 				<Header />
 				<Menu />
 				<AppContext.Provider
-					value={{ cone, cones, initialSum, riskLevel, maxRiskLevel, onChangeRiskLevel, onChangeInvestmentSum, onChangeYear, years }}
+					value={{ cone, cones, initialSum, riskLevel, maxRiskLevel, onChangeRiskLevel, onChangeInvestmentSum, onChangeMonthlySum, monthlySum }}
 				>
 					<Box style={selectors}>
 						<RiskLevelSelector />
 						<InitialInvestmentSumSelector />
-						<YearSelector/>
+						<MonthlySumSelector/>
 					</Box>
 
 					<Switch>
