@@ -9,7 +9,7 @@ import { IChartCordinates,ItimeSeriesForChart } from '../../common/interfaces';
 
 
 const Chart = () => {
-	const { riskLevel, cones, initialSum } = useContext(AppContext);
+	const { riskLevel, cones, initialSum, monthlySum } = useContext(AppContext);
 	const canvasRef = useRef(null);
 	useEffect(() => {
 		cones.length > 0 && drawChart();
@@ -23,9 +23,12 @@ const Chart = () => {
 			sigma,
 			years: 10,
 			initialSum,
-			monthlySum: 200,
+			monthlySum,
 			fee: 0.01,
 		}).timeSeriesForChart
+
+		console.log('timeSeries',timeSeries);
+
 
 		const labels = timeSeries.median.map((v: IChartCordinates, idx: number) => (idx % 12 == 0 ? idx / 12 : ''));
 		const dataMedian = timeSeries.median.map((v: IChartCordinates) => v.y);
