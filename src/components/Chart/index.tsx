@@ -8,9 +8,10 @@ import { IChartCordinates } from '../../common/constants';
 
 const Chart = () => {
     const { riskLevel, cones } = useContext(AppContext);
+    console.log('riskLevel, cones',riskLevel, cones);
     const canvasRef = useRef(null);
     useEffect(() => {
-        drawChart();
+        cones.length > 0 && drawChart();
     }, []);
 
     const drawChart = () => {

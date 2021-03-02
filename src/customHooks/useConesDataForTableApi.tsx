@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import { APIURL } from '../common/constants';
+import { APIURL,ICone } from '../common/constants';
 
 export const useConesDataForTableApi = async (
     setCone: React.Dispatch<React.SetStateAction<object>>,
@@ -13,9 +13,10 @@ export const useConesDataForTableApi = async (
 
     const callBackendApi = async () => {
         try {
+
             const response = await axios.get(APIURL);
             if (response) {
-                const filteredCone: Array<object> = response.data.filter(
+                const filteredCone: ICone[] = response.data.filter(
                     (cone: { riskLevel: number }) => cone.riskLevel === riskLevel
                 )[0];
                 setCone({ ...filteredCone });

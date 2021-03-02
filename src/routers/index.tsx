@@ -6,18 +6,12 @@ import Table from '../components/Table';
 import Chart from '../components/Chart';
 import { mainWrapper } from './styles';
 import { Box } from '@material-ui/core';
-import {  maxRiskLevel, minRiskLevel } from '../common/constants';
+import {  maxRiskLevel, minRiskLevel, ICone } from '../common/constants';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { useConesDataForTableApi } from '../customHooks/useConesDataForTableApi';
 import RiskLevelSelector from '../components/RiskLevelSelector';
 import { AppContext } from '../context/appContext';
-
-interface ICone {
-	mu: number;
-	riskLevel: number;
-	sigma: number;
-}
 
 const AppRoutes = () => {
     const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
@@ -30,7 +24,6 @@ const AppRoutes = () => {
 
 
     useConesDataForTableApi(setCone, riskLevel, setCones);
-
     return (
         <BrowserRouter>
             <Box style={mainWrapper}>

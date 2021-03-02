@@ -22,6 +22,13 @@ export interface IChartCordinates {
 	y: undefined | number;
 }
 
+
+export interface ICone {
+	mu: number;
+	riskLevel: number;
+	sigma: number;
+}
+
 export const columnHeaders = [
     {
         headerName: 'Month',
