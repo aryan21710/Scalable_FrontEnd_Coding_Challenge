@@ -5,11 +5,10 @@ import { chart, innerWrapper, outerWrapper } from './styles';
 import { AppContext } from '../../context/appContext';
 import { calculateTimeSeriesForChart } from '../../common/utils';
 import { chartOptions, chartDataSets } from '../../common/constants';
-
 import { IChartCordinates } from '../../common/interfaces';
 
 const Chart = () => {
-	const { riskLevel, cones } = useContext(AppContext);
+	const { riskLevel, cones, initialSum } = useContext(AppContext);
 	const canvasRef = useRef(null);
 	useEffect(() => {
 		cones.length > 0 && drawChart();
@@ -22,7 +21,7 @@ const Chart = () => {
 			mu,
 			sigma,
 			years: 10,
-			initialSum: 10000,
+			initialSum,
 			monthlySum: 200,
 			fee: 0.01,
 		});
