@@ -12,11 +12,11 @@ export const mainWrapper: React.CSSProperties = {
 
 export const selectors: React.CSSProperties = {
     display: 'flex',
-    justifyContent: 'space-around',
     alignItems: 'center',
+    justifyContent: 'space-around',
     flexDirection: 'row',
     margin: '3vh auto 0vh auto',
-    width: '60vw',
+    width: '55vw',
 };
 
 

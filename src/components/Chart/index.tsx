@@ -27,7 +27,7 @@ const Chart = () => {
 			fee: 0.01,
 		}).timeSeriesForChart
 
-		console.log('timeSeries',timeSeries);
+		// console.log('timeSeries',timeSeries);
 
 
 		const labels = timeSeries.median.map((v: IChartCordinates, idx: number) => (idx % 12 == 0 ? idx / 12 : ''));

@@ -1,0 +1,545 @@
+{
+    "extension": "linecount",
+    "version": "0.1.7",
+    "workspace": "/Users/aryangeektrust.in/Documents/Coding/Playground/typescript",
+    "linecount": [
+        {
+            "version": "0.1.7",
+            "counttime": "2021-03-03 01:45:31",
+            "filesum": 43,
+            "codesum": 1076,
+            "commentsum": 15,
+            "blanksum": 133,
+            "filelist": [
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": ".babelrc"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": ".eslintignore"
+                },
+                {
+                    "blank": 1,
+                    "code": 53,
+                    "comment": 1,
+                    "filename": ".eslintrc"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "images.d.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 71,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "public/index.html"
+                },
+                {
+                    "filename": "src/assets/images/vault.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src/common/cones.json"
+                },
+                {
+                    "blank": 11,
+                    "code": 100,
+                    "comment": 0,
+                    "filename": "src/common/constants.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src/common/interfaces.tsx"
+                },
+                {
+                    "blank": 11,
+                    "code": 68,
+                    "comment": 0,
+                    "filename": "src/common/utils.tsx"
+                },
+                {
+                    "blank": 13,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "src/components/Chart/index.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src/components/Chart/styles.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/components/Footer/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Footer/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src/components/Header/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Header/styles.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src/components/Home/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src/components/Home/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src/components/InitialInvestmentSumSelector/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/components/InitialInvestmentSumSelector/styles.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src/components/Menu/index.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Menu/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src/components/MonthlySumSelector/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/components/MonthlySumSelector/styles.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src/components/RiskLevelSelector/index.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src/components/RiskLevelSelector/styles.tsx"
+                },
+                {
+                    "blank": 7,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/index.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/InputSelectors.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/RiskLevelSelector.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src/components/Table/GridDisplay.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "src/components/Table/index.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Table/styles.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src/context/appContext.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src/customHooks/useConesDataForTableApi.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": "src/index.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src/index.tsx"
+                },
+                {
+                    "blank": 10,
+                    "code": 53,
+                    "comment": 6,
+                    "filename": "src/routers/index.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "src/routers/styles.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 59,
+                    "comment": 8,
+                    "filename": "webpack.config.js"
+                }
+            ]
+        },
+        {
+            "version": "0.1.7",
+            "counttime": "2021-03-03 01:54:20",
+            "filesum": 43,
+            "codesum": 1082,
+            "commentsum": 15,
+            "blanksum": 136,
+            "filelist": [
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": ".babelrc"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": ".eslintignore"
+                },
+                {
+                    "blank": 1,
+                    "code": 53,
+                    "comment": 1,
+                    "filename": ".eslintrc"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "images.d.ts"
+                },
+                {
+                    "blank": 0,
+                    "code": 71,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "public/index.html"
+                },
+                {
+                    "filename": "src/assets/images/vault.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src/common/cones.json"
+                },
+                {
+                    "blank": 11,
+                    "code": 100,
+                    "comment": 0,
+                    "filename": "src/common/constants.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src/common/interfaces.tsx"
+                },
+                {
+                    "blank": 11,
+                    "code": 68,
+                    "comment": 0,
+                    "filename": "src/common/utils.tsx"
+                },
+                {
+                    "blank": 13,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "src/components/Chart/index.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src/components/Chart/styles.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/components/Footer/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Footer/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src/components/Header/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Header/styles.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src/components/Home/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src/components/Home/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src/components/InitialInvestmentSumSelector/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/components/InitialInvestmentSumSelector/styles.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src/components/Menu/index.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Menu/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 33,
+                    "comment": 0,
+                    "filename": "src/components/MonthlySumSelector/index.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "src/components/MonthlySumSelector/styles.tsx"
+                },
+                {
+                    "blank": 5,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src/components/RiskLevelSelector/index.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src/components/RiskLevelSelector/styles.tsx"
+                },
+                {
+                    "blank": 7,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/index.tsx"
+                },
+                {
+                    "blank": 2,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/InputSelectors.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/RiskLevelSelector.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/styles.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src/components/Table/GridDisplay.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "src/components/Table/index.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 17,
+                    "comment": 0,
+                    "filename": "src/components/Table/styles.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src/context/appContext.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 27,
+                    "comment": 0,
+                    "filename": "src/customHooks/useConesDataForTableApi.tsx"
+                },
+                {
+                    "blank": 8,
+                    "code": 34,
+                    "comment": 0,
+                    "filename": "src/index.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src/index.tsx"
+                },
+                {
+                    "blank": 10,
+                    "code": 52,
+                    "comment": 6,
+                    "filename": "src/routers/index.tsx"
+                },
+                {
+                    "blank": 3,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "src/routers/styles.tsx"
+                },
+                {
+                    "blank": 0,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "tsconfig.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 59,
+                    "comment": 8,
+                    "filename": "webpack.config.js"
+                }
+            ]
+        }
+    ]
+}

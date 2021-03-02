@@ -48,7 +48,7 @@ export const calculateTimeSeries = ({
 	initialSum,
 	monthlySum,
 }: ICalculateTimeSeries): ItimeSeriesTable => {
-	console.log('years',years, mu, sigma, fee, initialSum, monthlySum )
+	// console.log('years',years, mu, sigma, fee, initialSum, monthlySum )
 	const series = calculateSeries({ years, mu, sigma, fee, initialSum, monthlySum });
 	[];
 	
