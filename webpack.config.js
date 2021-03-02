@@ -23,7 +23,7 @@ module.exports = {
         new CopyWebpackPlugin([{ from: 'public/index.html' }])
     ],
     devServer: {
-        port: 3000,
+        port: 3001,
         contentBase: path.join(__dirname, './public'),
         hot: true,
         open: true,

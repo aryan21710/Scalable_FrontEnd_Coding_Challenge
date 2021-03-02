@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { outerWrapper } from './styles';
 import { Box } from '@material-ui/core';
 import { AppContext } from '../../context/appContext';
+import { ICone } from '../../common/interfaces';
 
 interface IProps {
 	maxRiskLevel: number;
@@ -9,31 +10,28 @@ interface IProps {
 }
 
 const RiskLevelSelector = () => {
-    const {  maxRiskLevel, onChangeRiskLevel } = useContext(AppContext);
+	const { maxRiskLevel, onChangeRiskLevel, cones } = useContext(AppContext);
 
-    const defaultRisk = 10;
+	const defaultRisk = 10;
 
-    const options = [];
-    for (let k = 1; k <= maxRiskLevel; ++k) {
-        options.push(
-            <option key={k} value={k}>
-                {k}
-            </option>
-        );
-    }
+	const options = cones.map((cone: ICone, idx: number) => (
+		<option key={idx} value={cone.riskLevel}>
+			{cone.riskLevel}
+		</option>
+	));
 
-    const onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
-        const riskLevel = parseInt(event.target.value);
-        onChangeRiskLevel(riskLevel);
-    };
-    return (
-        <Box style={outerWrapper}>
-            <label>Risk level:</label>
-            <select onChange={onChange} defaultValue={defaultRisk}>
-                {options}
-            </select>
-        </Box>
-    );
+	const onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
+		const riskLevel = parseInt(event.target.value);
+		onChangeRiskLevel(riskLevel);
+	};
+	return (
+		<Box style={outerWrapper}>
+			<label>Risk level:</label>
+			<select onChange={onChange} defaultValue={defaultRisk}>
+				{options}
+			</select>
+		</Box>
+	);
 };
 
 export default RiskLevelSelector;
