@@ -11,15 +11,16 @@ export const outerWrapper: React.CSSProperties = {
 export const innerWrapper: React.CSSProperties = {
     width: '70vw',
     height: '70vh',
-    background: ' rgba(0,0,0,0.8)',
-    marginLeft: ' auto',
-    marginRight: ' auto',
+    background: ' rgba(0,0,0,0.9)',
+	margin: '1vh auto',
+	padding: '1vh 0vw'
+
 };
 
 
 export const chart:React.CSSProperties =  {
     width:'70vw',
     height:'70vh',
-    marginLeft: 'auto',
-    marginRight: 'auto',
+	margin: ' auto auto',
+
 };
