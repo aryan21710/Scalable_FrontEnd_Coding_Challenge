@@ -25,3 +25,14 @@ label {
     color: white;
     margin: 0vh 1vw;
 }
+
+input::placeholder {
+    color : white;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.MuiOutlinedInput-input, .MuiOutlinedInput-input:focus {
+    height: 3vh !important;
+    padding: 0 0 !important;
+}

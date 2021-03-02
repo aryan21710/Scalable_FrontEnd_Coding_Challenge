@@ -9,3 +9,14 @@ export const mainWrapper: React.CSSProperties = {
     backgroundPosition:'center',
     backgroundSize:'cover'
 };
+
+export const selectors: React.CSSProperties = {
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'row',
+    margin: '3vh auto 0vh auto',
+    width: '50vw',
+};
+
+
