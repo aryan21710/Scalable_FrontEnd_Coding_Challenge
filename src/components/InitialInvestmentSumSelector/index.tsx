@@ -7,18 +7,27 @@ const InitialInvestmentSumSelector = () => {
 	const { onChangeInvestmentSum, initialSum } = useContext(AppContext);
 
 	const onChange: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
-		const newInvestmentSum = parseInt(event.target.value);
-		onChangeInvestmentSum(newInvestmentSum);
+		if (parseInt(event.target.value) >= 0) {
+			onChangeInvestmentSum(event.target.value);
+		} else {
+			onChangeInvestmentSum(null);
+		}
 	};
 	return (
 		<Box style={outerWrapper}>
-			<TextField
-				style={investmentSum}
-				placeholder="Enter Investment Sum"
-				variant="outlined"
-				value={initialSum}
-				onChange={onChange}
-			/>
+			<form noValidate autoComplete="off">
+				<TextField
+					type="number"
+					style={investmentSum}
+					placeholder="Enter Investment Sum"
+					variant="outlined"
+					InputLabelProps={{
+						shrink: true,
+					}}
+					value={initialSum}
+					onChange={onChange}
+				/>
+			</form>
 		</Box>
 	);
 };

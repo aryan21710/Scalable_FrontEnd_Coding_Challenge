@@ -7,13 +7,13 @@ import GridDisplay from './GridDisplay';
 import { AppContext } from '../../context/appContext';
 
 const Table = () => {
-    const { cone } = useContext(AppContext);
+    const { cone, initialSum } = useContext(AppContext);
     const timeSeries: ItimeSeries[] = calculateTimeSeriesForTable({
         years: 10,
         mu: cone.mu,
         sigma: cone.sigma,
         fee: 0.01,
-        initialSum: 10000,
+        initialSum,
         monthlySum: 200,
     });
 

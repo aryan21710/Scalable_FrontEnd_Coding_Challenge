@@ -21,7 +21,7 @@ const AppRoutes = () => {
 	const [cones, setCones] = useState<ICone[]>([]);
 
 	const [riskLevel, setRiskLevel] = useState<number>(minRiskLevel);
-	const [initialSum, setInitialSum] = useState<number|string>('');
+	const [initialSum, setInitialSum] = useState<number>(null);
 
 	const onChangeRiskLevel: (newRiskLevel: React.SetStateAction<number>) => void = (
 		newRiskLevel: React.SetStateAction<number>

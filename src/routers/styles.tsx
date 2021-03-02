@@ -16,7 +16,7 @@ export const selectors: React.CSSProperties = {
     alignItems: 'center',
     flexDirection: 'row',
     margin: '3vh auto 0vh auto',
-    width: '50vw',
+    width: '35vw',
 };
 
 

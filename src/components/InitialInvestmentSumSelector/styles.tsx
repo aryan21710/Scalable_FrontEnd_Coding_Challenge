@@ -7,5 +7,6 @@ export const outerWrapper: React.CSSProperties = {
 
 export const investmentSum: React.CSSProperties = {
     width: '15vw',
-    height: '3vh'
+    height: '3vh',
+    textAlign: 'center'
 };
