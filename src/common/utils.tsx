@@ -37,7 +37,7 @@ export const calculateTimeSeriesForTable = ({
 	mu,
 	sigma,
 	fee,
-	initialSum=10000,
+	initialSum,
 	monthlySum,
 }: ICalculateTimeSeries):ItimeSeries[] => {
 	const series = calculateTimeSeries({ years, mu, sigma, fee, initialSum, monthlySum });
@@ -55,7 +55,7 @@ export const calculateTimeSeriesForChart = ({
 	mu,
 	sigma,
 	fee,
-	initialSum=10000,
+	initialSum,
 	monthlySum,
 }: ICalculateTimeSeries) => {
 	const series = calculateTimeSeries({ years, mu, sigma, fee, initialSum, monthlySum });
