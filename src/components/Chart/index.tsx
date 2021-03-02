@@ -3,9 +3,10 @@ import { Chart as ChartJs } from 'chart.js';
 import { Box } from '@material-ui/core';
 import { chart, innerWrapper, outerWrapper } from './styles';
 import { AppContext } from '../../context/appContext';
-import { calculateTimeSeriesForChart } from '../../common/utils';
+import { calculateTimeSeries } from '../../common/utils';
 import { chartOptions, chartDataSets } from '../../common/constants';
-import { IChartCordinates } from '../../common/interfaces';
+import { IChartCordinates,ItimeSeriesForChart } from '../../common/interfaces';
+
 
 const Chart = () => {
 	const { riskLevel, cones, initialSum } = useContext(AppContext);
@@ -17,14 +18,14 @@ const Chart = () => {
 	const drawChart = () => {
 		const { mu, sigma } = cones.filter((cone: { riskLevel: any }) => cone.riskLevel === riskLevel)[0];
 
-		const timeSeries = calculateTimeSeriesForChart({
+		const timeSeries:ItimeSeriesForChart = calculateTimeSeries({
 			mu,
 			sigma,
 			years: 10,
 			initialSum,
 			monthlySum: 200,
 			fee: 0.01,
-		});
+		}).timeSeriesForChart
 
 		const labels = timeSeries.median.map((v: IChartCordinates, idx: number) => (idx % 12 == 0 ? idx / 12 : ''));
 		const dataMedian = timeSeries.median.map((v: IChartCordinates) => v.y);

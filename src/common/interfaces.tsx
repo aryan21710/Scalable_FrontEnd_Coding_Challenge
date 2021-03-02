@@ -15,6 +15,17 @@ export interface ItimeSeries {
 	month: number;
 }
 
+export interface ItimeSeriesForChart {
+    median: {y:number, x:number|undefined}[];
+	upper95: {y:number, x:number|undefined}[];
+	lower05: {y:number, x:number|undefined}[];
+}
+
+export interface ItimeSeriesTable {
+    timeSeriesForTable:ItimeSeries[],
+    timeSeriesForChart:ItimeSeriesForChart
+}
+
 export interface IChartCordinates {
 	x: undefined | number;
 	y: undefined | number;
