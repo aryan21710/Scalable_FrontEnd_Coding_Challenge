@@ -59,7 +59,6 @@ export const calculateTimeSeries = ({
         month: idx,
     }));
 
-    console.log('timeSeriesForTable', timeSeriesForTable);
 
     const median: IChartCordinates[] = [];
     const upper95: IChartCordinates[] = [];
