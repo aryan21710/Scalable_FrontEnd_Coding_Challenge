@@ -14,7 +14,6 @@ export const innerWrapper: React.CSSProperties = {
     width: '70vw',
     height: '70vh',
     background: ' rgba(0,0,0,0.7)',
-    overflow: ' auto',
     marginLeft: ' auto',
     marginRight: ' auto',
 };

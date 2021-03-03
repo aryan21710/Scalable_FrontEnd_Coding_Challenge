@@ -5,4 +5,7 @@
 *hot-update*
 bundle.js
 *.spec.js
+linecount.*
+out/*.*
+*/fixtures
 

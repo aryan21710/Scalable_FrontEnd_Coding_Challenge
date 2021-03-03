@@ -5,11 +5,11 @@
     "linecount": [
         {
             "version": "0.1.7",
-            "counttime": "2021-03-03 02:56:11",
-            "filesum": 38,
-            "codesum": 984,
-            "commentsum": 11,
-            "blanksum": 119,
+            "counttime": "2021-03-03 21:10:25",
+            "filesum": 45,
+            "codesum": 1071,
+            "commentsum": 143,
+            "blanksum": 142,
             "filelist": [
                 {
                     "blank": 2,
@@ -31,9 +31,52 @@
                 },
                 {
                     "blank": 1,
-                    "code": 6,
+                    "code": 7,
                     "comment": 0,
                     "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "cypress.json"
+                },
+                {
+                    "blank": 6,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "Cypress/Integration/home.spec.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 45,
+                    "comment": 0,
+                    "filename": "Cypress/Integration/table.spec.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 17,
+                    "filename": "Cypress/plugins/index.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 25,
+                    "filename": "Cypress/support/commands.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 1,
+                    "comment": 17,
+                    "filename": "Cypress/support/index.js"
+                },
+                {
+                    "filename": "Cypress/videos/table.spec.js.mp4",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
                 },
                 {
                     "blank": 0,
@@ -73,15 +116,15 @@
                     "filename": "src/common/constants.tsx"
                 },
                 {
-                    "blank": 8,
+                    "blank": 11,
                     "code": 38,
-                    "comment": 0,
+                    "comment": 73,
                     "filename": "src/common/interfaces.tsx"
                 },
                 {
-                    "blank": 11,
+                    "blank": 12,
                     "code": 67,
-                    "comment": 1,
+                    "comment": 0,
                     "filename": "src/common/utils.tsx"
                 },
                 {
@@ -152,13 +195,13 @@
                 },
                 {
                     "blank": 3,
-                    "code": 26,
+                    "code": 25,
                     "comment": 0,
                     "filename": "src/components/Selectors/InitialSum.tsx"
                 },
                 {
                     "blank": 3,
-                    "code": 26,
+                    "code": 25,
                     "comment": 0,
                     "filename": "src/components/Selectors/MonthlySum.tsx"
                 },
@@ -175,9 +218,9 @@
                     "filename": "src/components/Selectors/styles.tsx"
                 },
                 {
-                    "blank": 3,
-                    "code": 31,
-                    "comment": 0,
+                    "blank": 4,
+                    "code": 33,
+                    "comment": 1,
                     "filename": "src/components/Table/GridDisplay.tsx"
                 },
                 {
@@ -199,10 +242,10 @@
                     "filename": "src/context/appContext.tsx"
                 },
                 {
-                    "blank": 3,
+                    "blank": 2,
                     "code": 27,
                     "comment": 0,
-                    "filename": "src/customHooks/useConesDataForTableApi.tsx"
+                    "filename": "src/customHooks/useFetchApiData.tsx"
                 },
                 {
                     "blank": 8,
@@ -217,7 +260,7 @@
                     "filename": "src/index.tsx"
                 },
                 {
-                    "blank": 6,
+                    "blank": 9,
                     "code": 45,
                     "comment": 0,
                     "filename": "src/routers/index.tsx"
@@ -244,11 +287,11 @@
         },
         {
             "version": "0.1.7",
-            "counttime": "2021-03-03 18:34:55",
-            "filesum": 70,
-            "codesum": 1081,
-            "commentsum": 238,
-            "blanksum": 157,
+            "counttime": "2021-03-03 23:33:45",
+            "filesum": 82,
+            "codesum": 1173,
+            "commentsum": 411,
+            "blanksum": 194,
             "filelist": [
                 {
                     "blank": 2,
@@ -270,9 +313,58 @@
                 },
                 {
                     "blank": 1,
-                    "code": 6,
+                    "code": 7,
                     "comment": 0,
                     "filename": ".gitignore"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "cypress.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "Cypress/fixtures/example.json"
+                },
+                {
+                    "blank": 14,
+                    "code": 32,
+                    "comment": 43,
+                    "filename": "Cypress/Integration/table.spec.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "Cypress/Passed/home.spec.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 2,
+                    "comment": 17,
+                    "filename": "Cypress/plugins/index.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 25,
+                    "filename": "Cypress/support/commands.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 1,
+                    "comment": 17,
+                    "filename": "Cypress/support/index.js"
+                },
+                {
+                    "filename": "Cypress/videos/table.spec.js.mp4",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
                 },
                 {
                     "blank": 0,
@@ -293,196 +385,220 @@
                     "filename": "public/index.html"
                 },
                 {
-                    "blank": 3,
-                    "code": 6,
-                    "comment": 13,
-                    "filename": "public/main.2ab30bb73d8c488223c1.hot-update.js"
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "public/main.0d3d8ebbce3dd2f4bb3d.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.2ab30bb73d8c488223c1.hot-update.json"
+                    "filename": "public/main.0d3d8ebbce3dd2f4bb3d.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.0edb3fdb417f955cefd4.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.0edb3fdb417f955cefd4.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.2de9cb8574a1f48b8996.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.2de9cb8574a1f48b8996.hot-update.json"
                 },
                 {
                     "blank": 0,
                     "code": 3,
                     "comment": 11,
-                    "filename": "public/main.38562037bf6fdee52068.hot-update.js"
+                    "filename": "public/main.3d1586ce651343bc2606.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.38562037bf6fdee52068.hot-update.json"
+                    "filename": "public/main.3d1586ce651343bc2606.hot-update.json"
                 },
                 {
                     "blank": 3,
                     "code": 6,
                     "comment": 13,
-                    "filename": "public/main.3d84d64eefaca53848e5.hot-update.js"
+                    "filename": "public/main.3e811937e8b58aa40381.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.3d84d64eefaca53848e5.hot-update.json"
-                },
-                {
-                    "blank": 3,
-                    "code": 6,
-                    "comment": 13,
-                    "filename": "public/main.4c63ce764bb50b838065.hot-update.js"
-                },
-                {
-                    "blank": 0,
-                    "code": 1,
-                    "comment": 0,
-                    "filename": "public/main.4c63ce764bb50b838065.hot-update.json"
+                    "filename": "public/main.3e811937e8b58aa40381.hot-update.json"
                 },
                 {
                     "blank": 0,
                     "code": 3,
                     "comment": 11,
-                    "filename": "public/main.640a818058c28d5a277c.hot-update.js"
+                    "filename": "public/main.48cd35552f42edb9e86a.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.640a818058c28d5a277c.hot-update.json"
+                    "filename": "public/main.48cd35552f42edb9e86a.hot-update.json"
                 },
                 {
                     "blank": 3,
                     "code": 6,
                     "comment": 13,
-                    "filename": "public/main.85d9a7b81ee5ee934ed4.hot-update.js"
+                    "filename": "public/main.611b44f7ba473930441e.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.85d9a7b81ee5ee934ed4.hot-update.json"
+                    "filename": "public/main.611b44f7ba473930441e.hot-update.json"
                 },
                 {
                     "blank": 3,
                     "code": 6,
                     "comment": 13,
-                    "filename": "public/main.9e952914c921aa988459.hot-update.js"
+                    "filename": "public/main.7bae0e955c153d04f46c.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.9e952914c921aa988459.hot-update.json"
-                },
-                {
-                    "blank": 3,
-                    "code": 6,
-                    "comment": 13,
-                    "filename": "public/main.a3781a4560fd1ce799f3.hot-update.js"
-                },
-                {
-                    "blank": 0,
-                    "code": 1,
-                    "comment": 0,
-                    "filename": "public/main.a3781a4560fd1ce799f3.hot-update.json"
+                    "filename": "public/main.7bae0e955c153d04f46c.hot-update.json"
                 },
                 {
                     "blank": 0,
                     "code": 3,
                     "comment": 11,
-                    "filename": "public/main.b8b9ff7901fe15833568.hot-update.js"
+                    "filename": "public/main.8d6f09817325fe12efef.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.b8b9ff7901fe15833568.hot-update.json"
+                    "filename": "public/main.8d6f09817325fe12efef.hot-update.json"
                 },
                 {
                     "blank": 3,
                     "code": 6,
                     "comment": 13,
-                    "filename": "public/main.d4eb045c9f90ea69a956.hot-update.js"
+                    "filename": "public/main.958a62a8736846d8925b.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.d4eb045c9f90ea69a956.hot-update.json"
-                },
-                {
-                    "blank": 0,
-                    "code": 3,
-                    "comment": 11,
-                    "filename": "public/main.db8126f67eb703b03501.hot-update.js"
-                },
-                {
-                    "blank": 0,
-                    "code": 1,
-                    "comment": 0,
-                    "filename": "public/main.db8126f67eb703b03501.hot-update.json"
+                    "filename": "public/main.958a62a8736846d8925b.hot-update.json"
                 },
                 {
                     "blank": 3,
                     "code": 6,
                     "comment": 13,
-                    "filename": "public/main.dfbea7d7b567df765c4e.hot-update.js"
+                    "filename": "public/main.ab1f181d38316f9c2e74.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.dfbea7d7b567df765c4e.hot-update.json"
+                    "filename": "public/main.ab1f181d38316f9c2e74.hot-update.json"
                 },
                 {
                     "blank": 3,
                     "code": 6,
                     "comment": 13,
-                    "filename": "public/main.e16c5e92f047ea212eab.hot-update.js"
+                    "filename": "public/main.ad0f466afab9c7d89c35.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.e16c5e92f047ea212eab.hot-update.json"
+                    "filename": "public/main.ad0f466afab9c7d89c35.hot-update.json"
                 },
                 {
                     "blank": 3,
                     "code": 6,
                     "comment": 13,
-                    "filename": "public/main.eb316d376faded3b16cc.hot-update.js"
+                    "filename": "public/main.bc0e4c83b911d4c51cff.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.eb316d376faded3b16cc.hot-update.json"
+                    "filename": "public/main.bc0e4c83b911d4c51cff.hot-update.json"
                 },
                 {
-                    "blank": 1,
-                    "code": 2,
-                    "comment": 9,
-                    "filename": "public/main.f0bd0dfc538509492b2a.hot-update.js"
-                },
-                {
-                    "blank": 0,
-                    "code": 1,
-                    "comment": 0,
-                    "filename": "public/main.f0bd0dfc538509492b2a.hot-update.json"
-                },
-                {
-                    "blank": 5,
-                    "code": 8,
-                    "comment": 15,
-                    "filename": "public/main.f70fbed34f96b1378092.hot-update.js"
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.c92c0ba5594135e80a64.hot-update.js"
                 },
                 {
                     "blank": 0,
                     "code": 1,
                     "comment": 0,
-                    "filename": "public/main.f70fbed34f96b1378092.hot-update.json"
+                    "filename": "public/main.c92c0ba5594135e80a64.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.d1b6ce43f3bf9f1cb7f9.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.d1b6ce43f3bf9f1cb7f9.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.e4960855b5a679634e71.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.e4960855b5a679634e71.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.e4c919cc36cbe95fc38e.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.e4c919cc36cbe95fc38e.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.f0e9283dbaccf5f93646.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.f0e9283dbaccf5f93646.hot-update.json"
                 },
                 {
                     "filename": "src/assets/images/vault.jpg",
@@ -499,19 +615,19 @@
                 },
                 {
                     "blank": 11,
-                    "code": 100,
+                    "code": 99,
                     "comment": 0,
                     "filename": "src/common/constants.tsx"
                 },
                 {
-                    "blank": 9,
+                    "blank": 11,
                     "code": 38,
-                    "comment": 30,
+                    "comment": 73,
                     "filename": "src/common/interfaces.tsx"
                 },
                 {
                     "blank": 12,
-                    "code": 68,
+                    "code": 67,
                     "comment": 0,
                     "filename": "src/common/utils.tsx"
                 },
@@ -583,13 +699,13 @@
                 },
                 {
                     "blank": 3,
-                    "code": 24,
+                    "code": 25,
                     "comment": 0,
                     "filename": "src/components/Selectors/InitialSum.tsx"
                 },
                 {
                     "blank": 3,
-                    "code": 24,
+                    "code": 25,
                     "comment": 0,
                     "filename": "src/components/Selectors/MonthlySum.tsx"
                 },
@@ -606,20 +722,20 @@
                     "filename": "src/components/Selectors/styles.tsx"
                 },
                 {
-                    "blank": 3,
-                    "code": 33,
+                    "blank": 5,
+                    "code": 31,
                     "comment": 0,
                     "filename": "src/components/Table/GridDisplay.tsx"
                 },
                 {
-                    "blank": 3,
+                    "blank": 4,
                     "code": 26,
                     "comment": 0,
                     "filename": "src/components/Table/index.tsx"
                 },
                 {
                     "blank": 3,
-                    "code": 17,
+                    "code": 16,
                     "comment": 0,
                     "filename": "src/components/Table/styles.tsx"
                 },
@@ -630,10 +746,10 @@
                     "filename": "src/context/appContext.tsx"
                 },
                 {
-                    "blank": 3,
+                    "blank": 2,
                     "code": 27,
                     "comment": 0,
-                    "filename": "src/customHooks/useConesDataForTableApi.tsx"
+                    "filename": "src/customHooks/useFetchApiData.tsx"
                 },
                 {
                     "blank": 8,
@@ -648,7 +764,7 @@
                     "filename": "src/index.tsx"
                 },
                 {
-                    "blank": 6,
+                    "blank": 9,
                     "code": 45,
                     "comment": 0,
                     "filename": "src/routers/index.tsx"

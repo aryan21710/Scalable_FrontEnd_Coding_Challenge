@@ -17,6 +17,7 @@ const Table = () => {
         monthlySum,
     })?.timeSeriesForTable;
 
+
     return (
         <Box style={outerWrapper}>
             <Box style={innerWrapper}>
