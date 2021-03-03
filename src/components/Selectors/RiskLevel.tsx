@@ -21,7 +21,7 @@ const RiskLevel:React.FC<IProps> = ({ onSelectHandler, cones }:IProps) => {
     return (
         <Box style={riskLevelWrapper}>
             <label>Risk level:</label>
-            <select onChange={onSelectHandler} defaultValue={defaultRiskLevel}>
+            <select id="cypressRiskLevel" onChange={onSelectHandler} defaultValue={defaultRiskLevel}>
                 {options}
             </select>
         </Box>

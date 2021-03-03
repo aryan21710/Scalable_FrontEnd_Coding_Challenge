@@ -11,6 +11,7 @@ const MonthlySum:React.FC<IProps> = ({ onChangeHandler, monthlySum }:IProps) => 
     <form noValidate autoComplete="off">
         <TextField
             type="number"
+            id="cypressMonthlySum"
             style={textField}
             placeholder="Enter Monthly Sum"
             variant="outlined"

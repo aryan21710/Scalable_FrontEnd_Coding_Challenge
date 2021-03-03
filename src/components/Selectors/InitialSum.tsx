@@ -11,6 +11,7 @@ const InitialSum:React.FC<IProps> = ({ onChangeHandler, initialSum }:IProps) => 
     <form noValidate autoComplete="off">
         <TextField
             type="number"
+            id="cypressInitialSum"
             style={textField}
             placeholder="Enter Initial Investment Sum"
             variant="outlined"
