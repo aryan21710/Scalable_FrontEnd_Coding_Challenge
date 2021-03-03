@@ -111,7 +111,7 @@ export interface IMapData {
 	 *  { number} mu - Average yearly return (No Default value)
 	 *
 	 *  { number} riskLevel:- RiskLevel controlled by RiskLevel Selector .Ranges between 3 and 25. (Default value is 3)
-	 * 
+	 *
 	 *  {number} sigma:- Standard deviation (No Default value)
 	 */
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
 import { ICone } from '../../common/interfaces';
-import { defaultSelectorValue } from '../../common/constants';
+import { defaultRiskLevel } from '../../common/constants';
 import { riskLevelWrapper } from './styles';
 
 
@@ -21,7 +21,7 @@ const RiskLevel:React.FC<IProps> = ({ onSelectHandler, cones }:IProps) => {
     return (
         <Box style={riskLevelWrapper}>
             <label>Risk level:</label>
-            <select onChange={onSelectHandler} defaultValue={defaultSelectorValue}>
+            <select onChange={onSelectHandler} defaultValue={defaultRiskLevel}>
                 {options}
             </select>
         </Box>

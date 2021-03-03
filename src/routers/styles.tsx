@@ -10,7 +10,7 @@ export const mainWrapper: React.CSSProperties = {
     backgroundSize:'cover'
 };
 
-export const selectors: React.CSSProperties = {
+export const selectorsWrapper: React.CSSProperties = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-around',

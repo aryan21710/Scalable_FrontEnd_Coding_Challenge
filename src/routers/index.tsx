@@ -1,29 +1,32 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { AppContext } from '../context/appContext';
+import Selectors from '../components/Selectors';
+import { Box } from '@material-ui/core';
+
 import Home from '../components/Home';
 import Menu from '../components/Menu';
 import Header from '../components/Header';
 import Table from '../components/Table';
 import Chart from '../components/Chart';
-import { mainWrapper, selectors } from './styles';
-import { Box } from '@material-ui/core';
-import { ICone } from '../common/interfaces';
-import { defaultSelectorValue } from '../common/constants';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from '../components/Footer';
-import { useConesDataForTableApi } from '../customHooks/useConesDataForTableApi';
-import { AppContext } from '../context/appContext';
-import Selectors from '../components/Selectors';
 
-const AppRoutes = () => {
+import { mainWrapper, selectorsWrapper } from './styles';
+import { ICone } from '../common/interfaces';
+import { defaultRiskLevel } from '../common/constants';
+import { useFetchApiData } from '../customHooks/useFetchApiData';
+
+
+const AppRoutes:()=>JSX.Element = () => {
     const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
     const [cones, setCones] = useState<ICone[]>([]);
 
-    const [riskLevel, setRiskLevel] = useState<number>(defaultSelectorValue);
+    const [riskLevel, setRiskLevel] = useState<number>(defaultRiskLevel);
     const [monthlySum, setMonthlySum] = useState<number>(0);
 
     const [initialSum, setInitialSum] = useState<number>(0);
 
-    useConesDataForTableApi(setCone, riskLevel, setCones);
+    useFetchApiData(setCone, riskLevel, setCones);
     return (
         <BrowserRouter>
             <Box style={mainWrapper}>
@@ -32,7 +35,7 @@ const AppRoutes = () => {
                 <AppContext.Provider
                     value={{ cone, cones, riskLevel, setRiskLevel,  initialSum, setInitialSum, monthlySum, setMonthlySum }}
                 >
-                    <Box style={selectors}>
+                    <Box style={selectorsWrapper}>
                         <Selectors/>
                     </Box>
 
