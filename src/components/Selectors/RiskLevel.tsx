@@ -10,22 +10,22 @@ interface IProps {
     cones: ICone[]
 }
 
-const RiskLevel:React.FC<IProps>= ({onSelectHandler,cones}:IProps) => {
+const RiskLevel:React.FC<IProps> = ({ onSelectHandler, cones }:IProps) => {
 
-	const options = cones.map((cone: ICone, idx: number) => (
-		<option key={idx} value={cone.riskLevel}>
-			{cone.riskLevel}
-		</option>
-	));
+    const options = cones.map((cone: ICone, idx: number) => (
+        <option key={idx} value={cone.riskLevel}>
+            {cone.riskLevel}
+        </option>
+    ));
 
-	return (
-		<Box style={riskLevelWrapper}>
-			<label>Risk level:</label>
-			<select onChange={onSelectHandler} defaultValue={defaultSelectorValue}>
-				{options}
-			</select>
-		</Box>
-	);
+    return (
+        <Box style={riskLevelWrapper}>
+            <label>Risk level:</label>
+            <select onChange={onSelectHandler} defaultValue={defaultSelectorValue}>
+                {options}
+            </select>
+        </Box>
+    );
 };
 
 export default RiskLevel;

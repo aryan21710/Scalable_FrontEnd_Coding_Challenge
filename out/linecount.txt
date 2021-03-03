@@ -2,12 +2,12 @@
 EXTENSION NAME : linecount
 EXTENSION VERSION : 0.1.7
 -------------------------------------------------------------------------------
-count time : 2021-03-03 01:54:20
+count time : 2021-03-03 02:56:11
 count workspace : /Users/aryangeektrust.in/Documents/Coding/Playground/typescript
-total files : 43
-total code lines : 1082
-total comment lines : 15
-total blank lines : 136
+total files : 38
+total code lines : 984
+total comment lines : 11
+total blank lines : 119
 
 .babelrc, code is 8, comment is 0, blank is 2.
 .eslintignore, code is 2, comment is 0, blank is 0.
@@ -20,8 +20,8 @@ src/assets/images/vault.jpg, it is a binary file.
 src/common/cones.json, code is 25, comment is 0, blank is 0.
 src/common/constants.tsx, code is 100, comment is 0, blank is 11.
 src/common/interfaces.tsx, code is 38, comment is 0, blank is 8.
-src/common/utils.tsx, code is 68, comment is 0, blank is 11.
-src/components/Chart/index.tsx, code is 60, comment is 0, blank is 13.
+src/common/utils.tsx, code is 67, comment is 1, blank is 11.
+src/components/Chart/index.tsx, code is 59, comment is 1, blank is 13.
 src/components/Chart/styles.tsx, code is 21, comment is 0, blank is 5.
 src/components/Footer/index.tsx, code is 11, comment is 0, blank is 2.
 src/components/Footer/styles.tsx, code is 17, comment is 0, blank is 1.
@@ -29,18 +29,13 @@ src/components/Header/index.tsx, code is 9, comment is 0, blank is 3.
 src/components/Header/styles.tsx, code is 17, comment is 0, blank is 1.
 src/components/Home/index.tsx, code is 9, comment is 0, blank is 2.
 src/components/Home/styles.tsx, code is 13, comment is 0, blank is 1.
-src/components/InitialInvestmentSumSelector/index.tsx, code is 33, comment is 0, blank is 3.
-src/components/InitialInvestmentSumSelector/styles.tsx, code is 11, comment is 0, blank is 1.
 src/components/Menu/index.tsx, code is 20, comment is 0, blank is 2.
 src/components/Menu/styles.tsx, code is 17, comment is 0, blank is 0.
-src/components/MonthlySumSelector/index.tsx, code is 33, comment is 0, blank is 3.
-src/components/MonthlySumSelector/styles.tsx, code is 11, comment is 0, blank is 1.
-src/components/RiskLevelSelector/index.tsx, code is 27, comment is 0, blank is 5.
-src/components/RiskLevelSelector/styles.tsx, code is 10, comment is 0, blank is 2.
-src/components/Selectors/index.tsx, code is 27, comment is 0, blank is 7.
-src/components/Selectors/InputSelectors.tsx, code is 22, comment is 0, blank is 2.
-src/components/Selectors/RiskLevelSelector.tsx, code is 23, comment is 0, blank is 6.
-src/components/Selectors/styles.tsx, code is 20, comment is 0, blank is 3.
+src/components/Selectors/index.tsx, code is 35, comment is 0, blank is 7.
+src/components/Selectors/InitialSum.tsx, code is 26, comment is 0, blank is 3.
+src/components/Selectors/MonthlySum.tsx, code is 26, comment is 0, blank is 3.
+src/components/Selectors/RiskLevel.tsx, code is 25, comment is 0, blank is 6.
+src/components/Selectors/styles.tsx, code is 16, comment is 0, blank is 1.
 src/components/Table/GridDisplay.tsx, code is 31, comment is 0, blank is 3.
 src/components/Table/index.tsx, code is 26, comment is 0, blank is 3.
 src/components/Table/styles.tsx, code is 17, comment is 0, blank is 3.
@@ -48,7 +43,89 @@ src/context/appContext.tsx, code is 2, comment is 0, blank is 1.
 src/customHooks/useConesDataForTableApi.tsx, code is 27, comment is 0, blank is 3.
 src/index.css, code is 34, comment is 0, blank is 8.
 src/index.tsx, code is 5, comment is 0, blank is 3.
-src/routers/index.tsx, code is 52, comment is 6, blank is 10.
+src/routers/index.tsx, code is 45, comment is 0, blank is 6.
+src/routers/styles.tsx, code is 19, comment is 0, blank is 3.
+tsconfig.json, code is 14, comment is 0, blank is 0.
+webpack.config.js, code is 59, comment is 8, blank is 2.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2021-03-03 18:34:55
+count workspace : /Users/aryangeektrust.in/Documents/Coding/Playground/typescript
+total files : 70
+total code lines : 1081
+total comment lines : 238
+total blank lines : 157
+
+.babelrc, code is 8, comment is 0, blank is 2.
+.eslintignore, code is 2, comment is 0, blank is 0.
+.eslintrc, code is 53, comment is 1, blank is 1.
+.gitignore, code is 6, comment is 0, blank is 1.
+images.d.ts, code is 3, comment is 0, blank is 0.
+package.json, code is 71, comment is 0, blank is 0.
+public/index.html, code is 11, comment is 0, blank is 0.
+public/main.2ab30bb73d8c488223c1.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.2ab30bb73d8c488223c1.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.38562037bf6fdee52068.hot-update.js, code is 3, comment is 11, blank is 0.
+public/main.38562037bf6fdee52068.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.3d84d64eefaca53848e5.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.3d84d64eefaca53848e5.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.4c63ce764bb50b838065.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.4c63ce764bb50b838065.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.640a818058c28d5a277c.hot-update.js, code is 3, comment is 11, blank is 0.
+public/main.640a818058c28d5a277c.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.85d9a7b81ee5ee934ed4.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.85d9a7b81ee5ee934ed4.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.9e952914c921aa988459.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.9e952914c921aa988459.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.a3781a4560fd1ce799f3.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.a3781a4560fd1ce799f3.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.b8b9ff7901fe15833568.hot-update.js, code is 3, comment is 11, blank is 0.
+public/main.b8b9ff7901fe15833568.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.d4eb045c9f90ea69a956.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.d4eb045c9f90ea69a956.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.db8126f67eb703b03501.hot-update.js, code is 3, comment is 11, blank is 0.
+public/main.db8126f67eb703b03501.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.dfbea7d7b567df765c4e.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.dfbea7d7b567df765c4e.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.e16c5e92f047ea212eab.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.e16c5e92f047ea212eab.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.eb316d376faded3b16cc.hot-update.js, code is 6, comment is 13, blank is 3.
+public/main.eb316d376faded3b16cc.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.f0bd0dfc538509492b2a.hot-update.js, code is 2, comment is 9, blank is 1.
+public/main.f0bd0dfc538509492b2a.hot-update.json, code is 1, comment is 0, blank is 0.
+public/main.f70fbed34f96b1378092.hot-update.js, code is 8, comment is 15, blank is 5.
+public/main.f70fbed34f96b1378092.hot-update.json, code is 1, comment is 0, blank is 0.
+src/assets/images/vault.jpg, it is a binary file.
+src/common/cones.json, code is 25, comment is 0, blank is 0.
+src/common/constants.tsx, code is 100, comment is 0, blank is 11.
+src/common/interfaces.tsx, code is 38, comment is 30, blank is 9.
+src/common/utils.tsx, code is 68, comment is 0, blank is 12.
+src/components/Chart/index.tsx, code is 59, comment is 1, blank is 13.
+src/components/Chart/styles.tsx, code is 21, comment is 0, blank is 5.
+src/components/Footer/index.tsx, code is 11, comment is 0, blank is 2.
+src/components/Footer/styles.tsx, code is 17, comment is 0, blank is 1.
+src/components/Header/index.tsx, code is 9, comment is 0, blank is 3.
+src/components/Header/styles.tsx, code is 17, comment is 0, blank is 1.
+src/components/Home/index.tsx, code is 9, comment is 0, blank is 2.
+src/components/Home/styles.tsx, code is 13, comment is 0, blank is 1.
+src/components/Menu/index.tsx, code is 20, comment is 0, blank is 2.
+src/components/Menu/styles.tsx, code is 17, comment is 0, blank is 0.
+src/components/Selectors/index.tsx, code is 35, comment is 0, blank is 7.
+src/components/Selectors/InitialSum.tsx, code is 24, comment is 0, blank is 3.
+src/components/Selectors/MonthlySum.tsx, code is 24, comment is 0, blank is 3.
+src/components/Selectors/RiskLevel.tsx, code is 25, comment is 0, blank is 6.
+src/components/Selectors/styles.tsx, code is 16, comment is 0, blank is 1.
+src/components/Table/GridDisplay.tsx, code is 33, comment is 0, blank is 3.
+src/components/Table/index.tsx, code is 26, comment is 0, blank is 3.
+src/components/Table/styles.tsx, code is 17, comment is 0, blank is 3.
+src/context/appContext.tsx, code is 2, comment is 0, blank is 1.
+src/customHooks/useConesDataForTableApi.tsx, code is 27, comment is 0, blank is 3.
+src/index.css, code is 34, comment is 0, blank is 8.
+src/index.tsx, code is 5, comment is 0, blank is 3.
+src/routers/index.tsx, code is 45, comment is 0, blank is 6.
 src/routers/styles.tsx, code is 19, comment is 0, blank is 3.
 tsconfig.json, code is 14, comment is 0, blank is 0.
 webpack.config.js, code is 59, comment is 8, blank is 2.

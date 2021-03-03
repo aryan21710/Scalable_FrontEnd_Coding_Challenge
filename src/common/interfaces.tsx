@@ -1,3 +1,20 @@
+/**
+ * This is the Description of this Interface.
+	 * @interface ICalculateTimeSeries:-
+	 * This is needed while calculating Time Series in Table and
+	 * Chart View Components
+	 *
+	 *  {number} mu - Average yearly return (No Default value)
+	 *
+	 *  {number} sigma:- Standard deviation (No Default value)
+	 *
+	 *  {number} initialSum:- Initial Investment Sum ( Customizable user value by inputting it in Filter Selector)
+	 *
+	 *  {number} monthlySum:-   Monthly Sum ( Customizable user value by inputting it in Filter Selector)
+	 *
+	 *  {number} fee:- Self Explanatory (Default value is 0.01)
+	 *  {number} years:- Self Explanatory (Ranges from 0 - 10)
+	 */
 
 export interface ICalculateTimeSeries {
 	years: number;
@@ -7,6 +24,20 @@ export interface ICalculateTimeSeries {
 	initialSum: number;
 	monthlySum: number;
 }
+
+/**
+ * This is the Description of this Interface.
+	 * @interface ItimeSeries:-
+	 * This is the return type for util function calculateTimeSeries
+	 *
+	 *  {number} median - Average yearly return (No Default value)
+	 *
+	 *  {number} good:- Standard deviation (No Default value)
+	 *
+	 *  {number} bad:- Initial Investment Sum ( Customizable user value by inputting it in Filter Selector)
+	 *
+	 *  {number} month:-   Monthly Sum ( Customizable user value by inputting it in Filter Selector)
+	 */
 
 export interface ItimeSeries {
 	median: number;

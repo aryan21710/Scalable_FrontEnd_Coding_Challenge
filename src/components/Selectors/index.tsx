@@ -7,36 +7,36 @@ import MonthlySum from './MonthlySum';
 import RiskLevel from './RiskLevel';
 
 const Selectors = () => {
-	const {  monthlySum, setMonthlySum, setRiskLevel, cones, initialSum, setInitialSum } = useContext(AppContext);
+    const {  monthlySum, setMonthlySum, setRiskLevel, cones, initialSum, setInitialSum } = useContext(AppContext);
 
-	const onMonthlySumHandler: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
-		if (parseInt(event.target.value) >= 0) {
-			 setMonthlySum(event.target.value)
-		} else {
-			setMonthlySum(null)
-		}
+    const onMonthlySumHandler: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
+        if (parseInt(event.target.value) >= 0) {
+			 setMonthlySum(event.target.value);
+        } else {
+            setMonthlySum(null);
+        }
     };
-    
+
     const onInitialSumHandler: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
-		if (parseInt(event.target.value) >= 0) {
-			 setInitialSum(event.target.value) 
-		} else {
-			 setInitialSum(null) 
-		}
-	};
+        if (parseInt(event.target.value) >= 0) {
+			 setInitialSum(event.target.value);
+        } else {
+			 setInitialSum(null);
+        }
+    };
 
-	const onSelectHandler: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
-		const riskLevel = parseInt(event.target.value);
-		setRiskLevel(riskLevel);
-	};
+    const onSelectHandler: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
+        const riskLevel = parseInt(event.target.value);
+        setRiskLevel(riskLevel);
+    };
 
-	return (
-		<React.Fragment>
-			<RiskLevel onSelectHandler={onSelectHandler} cones={cones}/>
-			<InitialSum  onChangeHandler={onInitialSumHandler} initialSum={initialSum} />
+    return (
+        <React.Fragment>
+            <RiskLevel onSelectHandler={onSelectHandler} cones={cones}/>
+            <InitialSum  onChangeHandler={onInitialSumHandler} initialSum={initialSum} />
             <MonthlySum  onChangeHandler={onMonthlySumHandler} monthlySum={monthlySum} />
-		</React.Fragment>
-	);
+        </React.Fragment>
+    );
 };
 
 export default Selectors;

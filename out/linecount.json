@@ -5,11 +5,11 @@
     "linecount": [
         {
             "version": "0.1.7",
-            "counttime": "2021-03-03 01:45:31",
-            "filesum": 43,
-            "codesum": 1076,
-            "commentsum": 15,
-            "blanksum": 133,
+            "counttime": "2021-03-03 02:56:11",
+            "filesum": 38,
+            "codesum": 984,
+            "commentsum": 11,
+            "blanksum": 119,
             "filelist": [
                 {
                     "blank": 2,
@@ -80,14 +80,14 @@
                 },
                 {
                     "blank": 11,
-                    "code": 68,
-                    "comment": 0,
+                    "code": 67,
+                    "comment": 1,
                     "filename": "src/common/utils.tsx"
                 },
                 {
                     "blank": 13,
-                    "code": 60,
-                    "comment": 0,
+                    "code": 59,
+                    "comment": 1,
                     "filename": "src/components/Chart/index.tsx"
                 },
                 {
@@ -133,18 +133,6 @@
                     "filename": "src/components/Home/styles.tsx"
                 },
                 {
-                    "blank": 3,
-                    "code": 33,
-                    "comment": 0,
-                    "filename": "src/components/InitialInvestmentSumSelector/index.tsx"
-                },
-                {
-                    "blank": 1,
-                    "code": 11,
-                    "comment": 0,
-                    "filename": "src/components/InitialInvestmentSumSelector/styles.tsx"
-                },
-                {
                     "blank": 2,
                     "code": 20,
                     "comment": 0,
@@ -157,50 +145,32 @@
                     "filename": "src/components/Menu/styles.tsx"
                 },
                 {
-                    "blank": 3,
-                    "code": 33,
-                    "comment": 0,
-                    "filename": "src/components/MonthlySumSelector/index.tsx"
-                },
-                {
-                    "blank": 1,
-                    "code": 11,
-                    "comment": 0,
-                    "filename": "src/components/MonthlySumSelector/styles.tsx"
-                },
-                {
-                    "blank": 5,
-                    "code": 27,
-                    "comment": 0,
-                    "filename": "src/components/RiskLevelSelector/index.tsx"
-                },
-                {
-                    "blank": 2,
-                    "code": 10,
-                    "comment": 0,
-                    "filename": "src/components/RiskLevelSelector/styles.tsx"
-                },
-                {
                     "blank": 7,
-                    "code": 27,
+                    "code": 35,
                     "comment": 0,
                     "filename": "src/components/Selectors/index.tsx"
                 },
                 {
-                    "blank": 2,
-                    "code": 24,
+                    "blank": 3,
+                    "code": 26,
                     "comment": 0,
-                    "filename": "src/components/Selectors/InputSelectors.tsx"
+                    "filename": "src/components/Selectors/InitialSum.tsx"
                 },
                 {
-                    "blank": 5,
-                    "code": 23,
+                    "blank": 3,
+                    "code": 26,
                     "comment": 0,
-                    "filename": "src/components/Selectors/RiskLevelSelector.tsx"
+                    "filename": "src/components/Selectors/MonthlySum.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/RiskLevel.tsx"
                 },
                 {
                     "blank": 1,
-                    "code": 11,
+                    "code": 16,
                     "comment": 0,
                     "filename": "src/components/Selectors/styles.tsx"
                 },
@@ -247,9 +217,9 @@
                     "filename": "src/index.tsx"
                 },
                 {
-                    "blank": 10,
-                    "code": 53,
-                    "comment": 6,
+                    "blank": 6,
+                    "code": 45,
+                    "comment": 0,
                     "filename": "src/routers/index.tsx"
                 },
                 {
@@ -274,11 +244,11 @@
         },
         {
             "version": "0.1.7",
-            "counttime": "2021-03-03 01:54:20",
-            "filesum": 43,
-            "codesum": 1082,
-            "commentsum": 15,
-            "blanksum": 136,
+            "counttime": "2021-03-03 18:34:55",
+            "filesum": 70,
+            "codesum": 1081,
+            "commentsum": 238,
+            "blanksum": 157,
             "filelist": [
                 {
                     "blank": 2,
@@ -323,6 +293,198 @@
                     "filename": "public/index.html"
                 },
                 {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.2ab30bb73d8c488223c1.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.2ab30bb73d8c488223c1.hot-update.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "public/main.38562037bf6fdee52068.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.38562037bf6fdee52068.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.3d84d64eefaca53848e5.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.3d84d64eefaca53848e5.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.4c63ce764bb50b838065.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.4c63ce764bb50b838065.hot-update.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "public/main.640a818058c28d5a277c.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.640a818058c28d5a277c.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.85d9a7b81ee5ee934ed4.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.85d9a7b81ee5ee934ed4.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.9e952914c921aa988459.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.9e952914c921aa988459.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.a3781a4560fd1ce799f3.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.a3781a4560fd1ce799f3.hot-update.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "public/main.b8b9ff7901fe15833568.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.b8b9ff7901fe15833568.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.d4eb045c9f90ea69a956.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.d4eb045c9f90ea69a956.hot-update.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 11,
+                    "filename": "public/main.db8126f67eb703b03501.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.db8126f67eb703b03501.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.dfbea7d7b567df765c4e.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.dfbea7d7b567df765c4e.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.e16c5e92f047ea212eab.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.e16c5e92f047ea212eab.hot-update.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 13,
+                    "filename": "public/main.eb316d376faded3b16cc.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.eb316d376faded3b16cc.hot-update.json"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 9,
+                    "filename": "public/main.f0bd0dfc538509492b2a.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.f0bd0dfc538509492b2a.hot-update.json"
+                },
+                {
+                    "blank": 5,
+                    "code": 8,
+                    "comment": 15,
+                    "filename": "public/main.f70fbed34f96b1378092.hot-update.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "public/main.f70fbed34f96b1378092.hot-update.json"
+                },
+                {
                     "filename": "src/assets/images/vault.jpg",
                     "isbinaryfile": true,
                     "blank": 0,
@@ -342,21 +504,21 @@
                     "filename": "src/common/constants.tsx"
                 },
                 {
-                    "blank": 8,
+                    "blank": 9,
                     "code": 38,
-                    "comment": 0,
+                    "comment": 30,
                     "filename": "src/common/interfaces.tsx"
                 },
                 {
-                    "blank": 11,
+                    "blank": 12,
                     "code": 68,
                     "comment": 0,
                     "filename": "src/common/utils.tsx"
                 },
                 {
                     "blank": 13,
-                    "code": 60,
-                    "comment": 0,
+                    "code": 59,
+                    "comment": 1,
                     "filename": "src/components/Chart/index.tsx"
                 },
                 {
@@ -402,18 +564,6 @@
                     "filename": "src/components/Home/styles.tsx"
                 },
                 {
-                    "blank": 3,
-                    "code": 33,
-                    "comment": 0,
-                    "filename": "src/components/InitialInvestmentSumSelector/index.tsx"
-                },
-                {
-                    "blank": 1,
-                    "code": 11,
-                    "comment": 0,
-                    "filename": "src/components/InitialInvestmentSumSelector/styles.tsx"
-                },
-                {
                     "blank": 2,
                     "code": 20,
                     "comment": 0,
@@ -426,56 +576,38 @@
                     "filename": "src/components/Menu/styles.tsx"
                 },
                 {
-                    "blank": 3,
-                    "code": 33,
-                    "comment": 0,
-                    "filename": "src/components/MonthlySumSelector/index.tsx"
-                },
-                {
-                    "blank": 1,
-                    "code": 11,
-                    "comment": 0,
-                    "filename": "src/components/MonthlySumSelector/styles.tsx"
-                },
-                {
-                    "blank": 5,
-                    "code": 27,
-                    "comment": 0,
-                    "filename": "src/components/RiskLevelSelector/index.tsx"
-                },
-                {
-                    "blank": 2,
-                    "code": 10,
-                    "comment": 0,
-                    "filename": "src/components/RiskLevelSelector/styles.tsx"
-                },
-                {
                     "blank": 7,
-                    "code": 27,
+                    "code": 35,
                     "comment": 0,
                     "filename": "src/components/Selectors/index.tsx"
                 },
                 {
-                    "blank": 2,
-                    "code": 22,
+                    "blank": 3,
+                    "code": 24,
                     "comment": 0,
-                    "filename": "src/components/Selectors/InputSelectors.tsx"
-                },
-                {
-                    "blank": 6,
-                    "code": 23,
-                    "comment": 0,
-                    "filename": "src/components/Selectors/RiskLevelSelector.tsx"
+                    "filename": "src/components/Selectors/InitialSum.tsx"
                 },
                 {
                     "blank": 3,
-                    "code": 20,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/MonthlySum.tsx"
+                },
+                {
+                    "blank": 6,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "src/components/Selectors/RiskLevel.tsx"
+                },
+                {
+                    "blank": 1,
+                    "code": 16,
                     "comment": 0,
                     "filename": "src/components/Selectors/styles.tsx"
                 },
                 {
                     "blank": 3,
-                    "code": 31,
+                    "code": 33,
                     "comment": 0,
                     "filename": "src/components/Table/GridDisplay.tsx"
                 },
@@ -516,9 +648,9 @@
                     "filename": "src/index.tsx"
                 },
                 {
-                    "blank": 10,
-                    "code": 52,
-                    "comment": 6,
+                    "blank": 6,
+                    "code": 45,
+                    "comment": 0,
                     "filename": "src/routers/index.tsx"
                 },
                 {

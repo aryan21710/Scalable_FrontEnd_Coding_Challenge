@@ -15,7 +15,7 @@ const Table = () => {
         fee: 0.01,
         initialSum,
         monthlySum,
-    }).timeSeriesForTable
+    })?.timeSeriesForTable;
 
     return (
         <Box style={outerWrapper}>
