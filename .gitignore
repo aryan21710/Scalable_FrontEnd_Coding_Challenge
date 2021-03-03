@@ -6,6 +6,7 @@
 bundle.js
 *.spec.js
 linecount.*
-out/*.*
+out/linecount.json
+out/linecount.txt
 */fixtures
 
