@@ -18,7 +18,7 @@ import { useFetchApiData } from '../customHooks/useFetchApiData';
 
 
 const AppRoutes:()=>JSX.Element = () => {
-    const [cone, setCone] = useState({});
+    const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
     const [cones, setCones] = useState<ICone[]>([]);
 
     const [riskLevel, setRiskLevel] = useState<number>(defaultRiskLevel);
