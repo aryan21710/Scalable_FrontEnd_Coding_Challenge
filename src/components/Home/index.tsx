@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@material-ui/core';
 import { outerWrapper, text } from './styles';
 
-const Home = () => (
+const Home:()=>JSX.Element = () => (
     <Box style={outerWrapper}>
         <Typography style={text}>WELCOME TO THE HOME PAGE</Typography>
     </Box>

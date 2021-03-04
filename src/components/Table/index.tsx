@@ -6,7 +6,7 @@ import { ItimeSeries } from '../../common/interfaces';
 import GridDisplay from './GridDisplay';
 import { AppContext } from '../../context/appContext';
 
-const Table = () => {
+const Table:()=>JSX.Element = () => {
     const { cone, initialSum, monthlySum } = useContext(AppContext);
     const timeSeries: ItimeSeries[] = calculateTimeSeries({
         years: 10,

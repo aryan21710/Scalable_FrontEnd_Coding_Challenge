@@ -8,8 +8,7 @@ export const useFetchApiData = async (
     riskLevel: number,
     setCones: React.Dispatch<React.SetStateAction<ICone[]>>
 ): Promise<void> => {
-    useEffect(() => {
-		 callBackendApi();
+    useEffect(() => {callBackendApi();
     }, [riskLevel]);
 
     const callBackendApi = async () => {

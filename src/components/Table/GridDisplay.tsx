@@ -9,8 +9,6 @@ interface IProps {
 	timeSeries: ItimeSeries[];
 }
 
-
-
 const GridDisplay: React.FC<IProps> = (props: IProps) => {
     const { timeSeries } = props;
     return (

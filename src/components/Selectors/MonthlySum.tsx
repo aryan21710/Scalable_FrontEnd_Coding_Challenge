@@ -1,6 +1,6 @@
 import React from 'react';
 import { textField } from './styles';
-import { Box, TextField } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 
 interface IProps {
     onChangeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void,

@@ -5,10 +5,10 @@ import { chart, innerWrapper, outerWrapper } from './styles';
 import { AppContext } from '../../context/appContext';
 import { calculateTimeSeries } from '../../common/utils';
 import { chartOptions, chartDataSets } from '../../common/constants';
-import { IChartCordinates, ItimeSeriesForChart } from '../../common/interfaces';
+import { IChartCordinates, ItimeSeriesForChart, ICone } from '../../common/interfaces';
 
 
-const Chart = () => {
+const Chart:()=>JSX.Element = () => {
     const { riskLevel, cones, initialSum, monthlySum } = useContext(AppContext);
     const canvasRef = useRef(null);
     useEffect(() => {
@@ -16,7 +16,7 @@ const Chart = () => {
     }, []);
 
     const drawChart = () => {
-        const { mu, sigma } = cones.filter((cone: { riskLevel: any }) => cone.riskLevel === riskLevel)[0];
+        const { mu, sigma } = cones.filter((cone: ICone) => cone.riskLevel === riskLevel)[0];
 
         const timeSeries:ItimeSeriesForChart = calculateTimeSeries({
             mu,
@@ -26,9 +26,6 @@ const Chart = () => {
             monthlySum,
             fee: 0.01,
         })?.timeSeriesForChart;
-
-        // console.log('timeSeries',timeSeries);
-
 
         const labels = timeSeries.median.map((v: IChartCordinates, idx: number) => (idx % 12 == 0 ? idx / 12 : ''));
         const dataMedian = timeSeries.median.map((v: IChartCordinates) => v.y);
@@ -58,7 +55,7 @@ const Chart = () => {
 
         const canvas = canvasRef.current;
         const context = canvas.getContext('2d');
-        const myChart = new ChartJs(context, config);
+        new ChartJs(context, config);
 
     };
     return (
