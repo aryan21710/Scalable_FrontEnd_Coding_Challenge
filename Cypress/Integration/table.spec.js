@@ -1,7 +1,6 @@
 describe('TABLE VIEW Page', () => {
 	const url = 'http://localhost:3001/table';
 	const headerText = 'FRONTEND CODING CHALLENGE';
-	const homePageText = 'WELCOME TO THE HOME PAGE';
 	const dropdownOptions = Array.from({ length: 26 }, (val, idx) => idx).splice(3, 23);
 	const monthArray = Array.from({ length: 13 }, (val, idx) => idx);
 	const footerText = '@Scalable-Capital Copyrighted by Aryan Sharma 02/2021. All Rights Reserved';
