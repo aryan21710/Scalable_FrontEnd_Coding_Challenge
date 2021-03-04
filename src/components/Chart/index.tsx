@@ -4,7 +4,7 @@ import { Box } from '@material-ui/core';
 import { chart, innerWrapper, outerWrapper } from './styles';
 import { AppContext } from '../../context/appContext';
 import { calculateTimeSeries } from '../../common/utils';
-import { chartOptions, chartDataSets } from '../../common/constants';
+import { chartOptions, chartDataSets, canvasWidth, canvasHeight  } from '../../common/constants';
 import { IChartCordinates, ItimeSeriesForChart, ICone } from '../../common/interfaces';
 
 
@@ -61,7 +61,7 @@ const Chart:()=>JSX.Element = () => {
     return (
         <Box style={outerWrapper}>
             <Box style={innerWrapper}>
-                <canvas style={chart} ref={canvasRef} width={'70vw'} height={450} />
+                <canvas style={chart} ref={canvasRef} width={canvasWidth} height={canvasHeight} />
             </Box>
         </Box>
     );

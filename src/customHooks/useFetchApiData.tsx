@@ -10,11 +10,11 @@ import { APIURL } from '../common/constants';
  *
  * @function useFetchApiData
  *
- * @param {Object} setCone
+ *  @param {Object} setCone
  *
- * @param {number} riskLevel
+ *  @param {number} riskLevel
  *
- * @param {array} setCones
+ *  @param {Array} setCones
  *
  */
 

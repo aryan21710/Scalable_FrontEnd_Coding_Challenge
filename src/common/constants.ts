@@ -1,9 +1,12 @@
 export const maxRiskLevel = 25;
 export const minRiskLevel = 3;
-export const homeUrl = 'http://localhost:3001/';
+export const homeUrl = 'http://localhost:3000/';
 export const headerText = 'FRONTEND CODING CHALLENGE';
 export const homePageText = 'WELCOME TO THE HOME PAGE';
 export const footerText = '@Scalable-Capital Copyrighted by Aryan Sharma 02/2021. All Rights Reserved';
+export const canvasWidth = '70vw';
+export const canvasHeight = '450';
+
 
 export const columnHeaders = [
     {
@@ -110,4 +113,4 @@ export const chartDataSets = [
     },
 ];
 
-export const APIURL = 'http://localhost:3001/api/cones';
+export const APIURL = 'http://localhost:3000/api/cones';
