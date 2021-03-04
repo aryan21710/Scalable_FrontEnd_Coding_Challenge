@@ -80,7 +80,7 @@ export const chartOptions = {
 
 };
 
-export const defaultRiskLevel = 10;
+export const defaultRiskLevel = 3;
 
 export const chartDataSets = [
     {
