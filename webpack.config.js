@@ -8,12 +8,6 @@ module.exports = {
     entry: ['babel-polyfill', './src/index.tsx'],
     mode: 'development',
     output: {
-        /*
-        This wont serve the bundle.js file from memory.
-         webpack command will create a bundle and will place it in public folder.
-          webpack-dev-server by default will serve the bundle.js from memory.
-          This will avoid serving the in memory bundle.js and will pick up the new bundle.js everytime.
-        */
         publicPath: 'public',
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public'),
