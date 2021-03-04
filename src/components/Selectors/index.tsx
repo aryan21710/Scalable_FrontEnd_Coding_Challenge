@@ -9,7 +9,7 @@ const Selectors:()=>JSX.Element = () => {
     const {  monthlySum, setMonthlySum, setRiskLevel, cones, initialSum, setInitialSum } = useContext(AppContext);
 
     // eslint-disable-next-line no-unused-vars
-    const onMonthlySumHandler: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
+    const handleMonthlySum: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
         if (parseInt(event.target.value) >= 0) {setMonthlySum(event.target.value);
         } else {
             setMonthlySum(null);
@@ -17,23 +17,23 @@ const Selectors:()=>JSX.Element = () => {
     };
 
     // eslint-disable-next-line no-unused-vars
-    const onInitialSumHandler: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
+    const handleInitialSum: (event: React.ChangeEvent<HTMLInputElement>) => void = (event) => {
         if (parseInt(event.target.value) >= 0) {setInitialSum(event.target.value);
         } else {setInitialSum(null);
         }
     };
 
     // eslint-disable-next-line no-unused-vars
-    const onSelectHandler: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
+    const handleRiskLevel: (event: React.ChangeEvent<HTMLSelectElement>) => void = (event) => {
         const riskLevel = parseInt(event.target.value);
         setRiskLevel(riskLevel);
     };
 
     return (
         <React.Fragment>
-            <RiskLevel onSelectHandler={onSelectHandler} cones={cones}/>
-            <InitialSum  onChangeHandler={onInitialSumHandler} initialSum={initialSum} />
-            <MonthlySum  onChangeHandler={onMonthlySumHandler} monthlySum={monthlySum} />
+            <RiskLevel onSelectHandler={handleRiskLevel} cones={cones}/>
+            <InitialSum  onChangeHandler={handleInitialSum} initialSum={initialSum} />
+            <MonthlySum  onChangeHandler={handleMonthlySum} monthlySum={monthlySum} />
         </React.Fragment>
     );
 };
