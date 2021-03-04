@@ -1,0 +1,26 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=-5036
+END=6668
+title=Home Page Validation of Header Component
+[CHAPTER]
+TIMEBASE=1/1000
+START=4049
+END=18408
+title=Home Page Validation of Home Page Text Component
+[CHAPTER]
+TIMEBASE=1/1000
+START=25401
+END=33399
+title=Home Page Validation of Menu Links
+[CHAPTER]
+TIMEBASE=1/1000
+START=35538
+END=41447
+title=Home Page Validation of Footer Component
+[CHAPTER]
+TIMEBASE=1/1000
+START=33379
+END=47903
+title=Home Page Validation of URL Redirect for Menu Links
