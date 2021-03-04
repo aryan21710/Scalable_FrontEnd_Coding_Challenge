@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { AppContext } from '../context/appContext';
-import Selectors from '../components/Selectors';
 import { Box } from '@material-ui/core';
+import { AppContext } from '../context/appContext';
 
 import Home from '../components/Home';
 import Menu from '../components/Menu';
@@ -10,6 +9,7 @@ import Header from '../components/Header';
 import Table from '../components/Table';
 import Chart from '../components/Chart';
 import Footer from '../components/Footer';
+import Selectors from '../components/Selectors';
 
 import { mainWrapper, selectorsWrapper } from './styles';
 import { ICone } from '../common/interfaces';
@@ -20,10 +20,8 @@ import { useFetchApiData } from '../customHooks/useFetchApiData';
 const AppRoutes:()=>JSX.Element = () => {
     const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
     const [cones, setCones] = useState<ICone[]>([]);
-
     const [riskLevel, setRiskLevel] = useState<number>(defaultRiskLevel);
     const [monthlySum, setMonthlySum] = useState<number>(0);
-
     const [initialSum, setInitialSum] = useState<number>(0);
 
     useFetchApiData(setCone, riskLevel, setCones);

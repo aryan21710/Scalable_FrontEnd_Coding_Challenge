@@ -3,15 +3,31 @@ import axios from 'axios';
 import { ICone } from '../common/interfaces';
 import { APIURL } from '../common/constants';
 
+/**
+ * This is the Description of this Custom Hook.
+ *
+ * This will fetch API Data and will populate cone Data.
+ *
+ * @function useFetchApiData
+ *
+ * @param {Object} setCone
+ *
+ * @param {number} riskLevel
+ *
+ * @param {array} setCones
+ *
+ */
+
 export const useFetchApiData = async (
     setCone: React.Dispatch<React.SetStateAction<ICone>>,
     riskLevel: number,
     setCones: React.Dispatch<React.SetStateAction<ICone[]>>
 ): Promise<void> => {
-    useEffect(() => {callBackendApi();
+
+    useEffect(() => {fetchApiData();
     }, [riskLevel]);
 
-    const callBackendApi = async () => {
+    const fetchApiData = async () => {
         try {
             const response = await axios.get(APIURL);
             if (response) {
