@@ -46,7 +46,7 @@ input {
 }
 
 .slider {
-    animation: example 10s ease-in-out 0s infinite forwards;
+    animation: example 15s ease-in-out 0s infinite forwards;
     position: relative;
 }
 
