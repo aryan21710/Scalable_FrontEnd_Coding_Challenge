@@ -20,7 +20,7 @@ Scalable FrontEnd Coding Challenge.
 
 # Build and Test Steps:- 
 
-1. Clone the GitHub Project.
+1. git clone https://github.com/aryan21710/Typescript_React_webpack_materialUi.git.
 2. npm install (This will install all neccesary packages to run the project).
 3. npm run build:dev (Will create bundle.js file inside Public dir)
 4. npm run start (This will run the project).
