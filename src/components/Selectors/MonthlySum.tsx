@@ -3,6 +3,7 @@ import { textField } from './styles';
 import { TextField } from '@material-ui/core';
 
 interface IProps {
+    // eslint-disable-next-line no-unused-vars
     onChangeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void,
     monthlySum: number
 }

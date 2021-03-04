@@ -3,7 +3,8 @@ import { textField } from './styles';
 import { TextField } from '@material-ui/core';
 
 interface IProps {
-    onChangeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void,
+    // eslint-disable-next-line no-unused-vars
+    onChangeHandler: (event: {target: {value: string;};}) => void,
     initialSum: number
 }
 

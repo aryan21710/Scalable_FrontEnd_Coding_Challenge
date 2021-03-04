@@ -6,6 +6,7 @@ import { riskLevelWrapper } from './styles';
 
 
 interface IProps {
+    // eslint-disable-next-line no-unused-vars
     onSelectHandler: (event: React.ChangeEvent<HTMLSelectElement>) => void,
     cones: ICone[]
 }
