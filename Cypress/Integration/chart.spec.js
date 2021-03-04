@@ -1,7 +1,7 @@
+import {homeUrl,headerText,footerText} from '../../src/common/constants'
+
 describe('CHART VIEW Page', () => {
-	const url = 'http://localhost:3001/chart';
-	const headerText = 'FRONTEND CODING CHALLENGE';
-	const footerText = '@Scalable-Capital Copyrighted by Aryan Sharma 02/2021. All Rights Reserved';
+	const url = `${homeUrl}chart`;
 	beforeEach(() => {
 		cy.visit('/chart');
 		cy.viewport('macbook-15');

@@ -1,8 +1,5 @@
+import {homeUrl,headerText,homePageText,footerText} from '../../src/common/constants'
 describe('Home Page', () => {
-    const homeUrl = 'http://localhost:3001/';
-    const headerText = 'FRONTEND CODING CHALLENGE';
-    const homePageText = 'WELCOME TO THE HOME PAGE';
-    const footerText = '@Scalable-Capital Copyrighted by Aryan Sharma 02/2021. All Rights Reserved';
     beforeEach(() => {
         cy.visit('/');
         cy.viewport('macbook-15');

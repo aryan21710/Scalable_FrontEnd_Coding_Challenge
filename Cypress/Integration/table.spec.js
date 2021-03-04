@@ -1,9 +1,8 @@
+import {homeUrl,headerText,footerText} from '../../src/common/constants'
+
 describe('TABLE VIEW Page', () => {
-	const url = 'http://localhost:3001/table';
-	const headerText = 'FRONTEND CODING CHALLENGE';
-	const dropdownOptions = Array.from({ length: 26 }, (val, idx) => idx).splice(3, 23);
+	const url = `${homeUrl}table`;
 	const monthArray = Array.from({ length: 13 }, (val, idx) => idx);
-	const footerText = '@Scalable-Capital Copyrighted by Aryan Sharma 02/2021. All Rights Reserved';
 	beforeEach(() => {
 		cy.visit('/table');
 		cy.viewport('macbook-15');

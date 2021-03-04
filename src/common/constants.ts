@@ -1,5 +1,9 @@
 export const maxRiskLevel = 25;
 export const minRiskLevel = 3;
+export const homeUrl = 'http://localhost:3001/';
+export const headerText = 'FRONTEND CODING CHALLENGE';
+export const homePageText = 'WELCOME TO THE HOME PAGE';
+export const footerText = '@Scalable-Capital Copyrighted by Aryan Sharma 02/2021. All Rights Reserved';
 
 export const columnHeaders = [
     {
