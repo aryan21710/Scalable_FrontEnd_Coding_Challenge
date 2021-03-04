@@ -24,5 +24,5 @@ Scalable FrontEnd Coding Challenge.
 2. npm install (This will install all neccesary packages to run the project).
 3. npm run build:dev (Will create bundle.js file inside Public dir)
 4. npm run start (This will run the project).
-5. npm run cypress (Will run all Test Cases sequentially on a chrome browser)
+5. npm run test (Will run all Test Cases sequentially on a chrome browser)
 

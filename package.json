@@ -1,14 +1,13 @@
 {
-    "name": "sample-typescript-project",
+    "name": "scalable-coding-challenge",
     "version": "1.0.0",
-    "description": "Sample Typescript project",
+    "description": "Scalable FrontEnd Coding Challenge",
     "main": "index.tsx",
     "scripts": {
         "start": "webpack serve",
-        "build:dev": "rm -rf public/main.* ; webpack --watch",
-        "cypress": "cypress run --browser chrome",
-        "lint:fix": "eslint src/  --fix",
-        "lint": "eslint . --ext .tsx",
+        "build:dev": "webpack",
+        "test": "cypress run --browser chrome",
+        "lint": "eslint . --fix && echo 'Lint Complete.'",
         "check-types": "tsc"
     },
     "author": "aryan",

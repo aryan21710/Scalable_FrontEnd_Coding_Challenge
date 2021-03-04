@@ -3,3 +3,4 @@ public
 webpack.config.js
 tsconfig.json
 *.spec.js
+plugins/
