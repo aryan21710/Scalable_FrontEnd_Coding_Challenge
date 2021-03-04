@@ -44,3 +44,13 @@ input {
 .ag-center-cols-viewport {
     overflow-x: hidden;
 }
+
+.slider {
+    animation: example 10s ease-in-out 0s infinite forwards;
+    position: relative;
+}
+
+@keyframes example {
+    0%   { left:70vw;}
+    100% { left:-70vw;}
+}

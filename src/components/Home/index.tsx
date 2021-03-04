@@ -5,7 +5,7 @@ import { homePageText } from '../../common/constants';
 
 const Home:()=>JSX.Element = () => (
     <Box style={outerWrapper}>
-        <Typography style={text}>{homePageText}</Typography>
+        <Typography className="slider" style={text}>{homePageText}</Typography>
     </Box>
 );
 
