@@ -40,3 +40,7 @@ input {
     height: 3vh !important;
     padding: 0 0 !important;
 }
+
+.ag-center-cols-viewport {
+    overflow-x: hidden;
+}
