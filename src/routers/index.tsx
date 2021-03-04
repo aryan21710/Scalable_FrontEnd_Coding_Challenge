@@ -21,8 +21,8 @@ const AppRoutes:()=>JSX.Element = () => {
     const [cone, setCone] = useState<ICone>({ mu: 0, riskLevel: 0, sigma: 0 });
     const [cones, setCones] = useState<ICone[]>([]);
     const [riskLevel, setRiskLevel] = useState<number>(defaultRiskLevel);
-    const [monthlySum, setMonthlySum] = useState<number>(0);
-    const [initialSum, setInitialSum] = useState<number>(0);
+    const [monthlySum, setMonthlySum] = useState<number>(200);
+    const [initialSum, setInitialSum] = useState<number>(10000);
 
     useFetchApiData(setCone, riskLevel, setCones);
     return (
