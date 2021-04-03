@@ -8,7 +8,7 @@
         "build:dev": "webpack --watch",
         "test": "cypress run --browser chrome",
         "lint": "eslint . --fix && echo 'Lint Complete.'",
-        "check-types": "tsc"
+        "check-types": "tsc -p ./tsconfig.json"
     },
     "author": "aryan",
     "license": "UNLICENSED",

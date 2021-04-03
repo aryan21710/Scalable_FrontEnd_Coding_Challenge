@@ -1,4 +1,4 @@
-import { ICalculateTimeSeries, IChartCordinates,  IMapData, ItimeSeriesTable } from './interfaces';
+import { ICalculateTimeSeries, IChartCordinates,  IMapData, ItimeSeriesTable, ItimeSeriesForChart } from './interfaces';
 
 export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalculateTimeSeries): IMapData => {
     const yearlyReturn = mu - fee;
@@ -70,7 +70,10 @@ export const calculateTimeSeries = ({
         lower05.push({ y: series[k].lower05, x: series[k].x });
     }
 
-    const timeSeriesForChart = { median, upper95, lower05 };
+    // eslint-disable-next-line no-console
+    console.log('median,upper95,lower05', median, upper95, lower05);
+
+    const timeSeriesForChart:ItimeSeriesForChart = { median, upper95, lower05 };
     return {
         timeSeriesForTable,
         timeSeriesForChart
