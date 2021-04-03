@@ -4,7 +4,6 @@ export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalc
     const yearlyReturn = mu - fee;
     const monthlyReturn = yearlyReturn / 12;
     const month = years * 12;
-    let x;
 
     const median =
 		initialSum * Math.exp(yearlyReturn * years) +
@@ -17,7 +16,7 @@ export const mapDate = ({ years, mu, sigma, fee, initialSum, monthlySum }: ICalc
         median: median,
         upper95: Math.exp(Math.log(median) + Math.sqrt(years) * sigma * 1.645),
         lower05: Math.exp(Math.log(median) - Math.sqrt(years) * sigma * 1.645),
-        x,
+        x: undefined,
     };
 };
 
@@ -48,8 +47,7 @@ export const calculateTimeSeries = ({
     initialSum,
     monthlySum,
 }: ICalculateTimeSeries): ItimeSeriesTable => {
-    const series = calculateSeries({ years, mu, sigma, fee, initialSum, monthlySum });
-    [];
+    const series:IMapData[] = calculateSeries({ years, mu, sigma, fee, initialSum, monthlySum });
 
 
     const timeSeriesForTable = series.map((seriesElem, idx) => ({
@@ -65,15 +63,15 @@ export const calculateTimeSeries = ({
     const lower05: IChartCordinates[] = [];
 
     for (let k = 0; k < series.length; k++) {
-        median.push({ y: series[k].median, x: series[k]?.x });
-        upper95.push({ y: series[k].upper95, x: series[k]?.x });
-        lower05.push({ y: series[k].lower05, x: series[k].x });
+        median.push({ y: series[k].median, x: undefined });
+        upper95.push({ y: series[k].upper95, x: undefined });
+        lower05.push({ y: series[k].lower05, x: undefined });
     }
 
-    // eslint-disable-next-line no-console
-    console.log('median,upper95,lower05', median, upper95, lower05);
 
     const timeSeriesForChart:ItimeSeriesForChart = { median, upper95, lower05 };
+    // console.log('timeSeriesForChart', timeSeriesForChart);
+
     return {
         timeSeriesForTable,
         timeSeriesForChart

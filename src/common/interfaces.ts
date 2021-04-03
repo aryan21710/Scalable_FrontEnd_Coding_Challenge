@@ -17,12 +17,12 @@
  */
 
 export interface ICalculateTimeSeries {
-  years: number
-  mu: number
-  sigma: number
-  fee: number
-  initialSum: number
-  monthlySum: number
+  years: number,
+  mu: number,
+  sigma: number,
+  fee: number,
+  initialSum: number,
+  monthlySum: number,
 }
 
 /**
@@ -40,10 +40,10 @@ export interface ICalculateTimeSeries {
  */
 
 export interface ItimeSeries {
-  median: number
-  good: number
-  bad: number
-  month: number
+  median: number,
+  good: number,
+  bad: number,
+  month: number,
 }
 
 /**
@@ -60,16 +60,11 @@ export interface ItimeSeries {
  */
 
 export interface ItimeSeriesForChart {
-  median: { y: number; x: number | undefined }[]
-  upper95: { y: number; x: number | undefined }[]
-  lower05: { y: number; x: number | undefined }[]
+  median: { y: number; x: undefined }[]
+  upper95: { y: number; x: undefined }[]
+  lower05: { y: number; x:  undefined }[]
 }
 
-export interface ItimeSeriesForChartObj {
-  median: { y: number; x: number | undefined }
-  upper95: { y: number; x: number | undefined }
-  lower05: { y: number; x: number | undefined }
-}
 
 /**
  * This is the Description of this Interface.
@@ -99,15 +94,15 @@ export interface ItimeSeriesTable {
  */
 
 export interface IChartCordinates {
-  x: null | number
-  y: null | number
+  x: undefined,
+  y:  number
 }
 
 export interface IMapData {
-  median: number
-  upper95: number
-  lower05: number
-  x: number | null
+  median: number,
+  upper95: number,
+  lower05: number,
+  x: number | null | undefined
 }
 /**
  * This is the Description of this Interface.
@@ -122,19 +117,19 @@ export interface IMapData {
  */
 
 export interface ICone {
-  mu: number
-  riskLevel: number
-  sigma: number
+  mu: number,
+  riskLevel: number,
+  sigma: number,
 }
 
 export interface IAppContext {
   cone: { mu: number; sigma: number; riskLevel: number }
-  initialSum: number
-  monthlySum: number
-  setRiskLevel: React.Dispatch<React.SetStateAction<number>>
-  setInitialSum: React.Dispatch<React.SetStateAction<number>>
-  setMonthlySum: React.Dispatch<React.SetStateAction<number>>
-  riskLevel: number
-  cones: ICone[]
+  initialSum: number,
+  monthlySum: number,
+  setRiskLevel: React.Dispatch<React.SetStateAction<number>>,
+  setInitialSum: React.Dispatch<React.SetStateAction<number>>,
+  setMonthlySum: React.Dispatch<React.SetStateAction<number>>,
+  riskLevel: number,
+  cones: ICone[],
 }
 
