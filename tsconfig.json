@@ -1,14 +1,40 @@
-{ "compilerOptions": {
-      "outDir": "./public",
-      "noImplicitAny": true,
-      "module": "AMD",
-      "target": "es6",
-      "jsx": "react",
-      "allowJs": true,
-      "allowSyntheticDefaultImports": true,
-      "moduleResolution": "node",
-      "esModuleInterop": true,
-    },
-    "include": ["src","images.d.ts"],
-    "exclude": ["node_modules", "**/*.spec.ts"]
-  }
+{
+  "compilerOptions": {
+    "outDir": "./public",
+    "noImplicitAny": true,
+    "module": "AMD",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+  },
+  "include": ["src", "images.d.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
+
+/**
+1] allowSyntheticDefaultImports:- 
+When set to true, allowSyntheticDefaultImports allows you to write an import like:
+import React from "react";
+instead of:
+import * as React from "react";
+
+2] AllowJS:-
+Allow JavaScript files to be imported inside your project, instead of just .ts and .tsx files.
+
+3] jsx:-
+react: Emit .js files with JSX changed to the equivalent React.createElement calls
+preserve: Emit .jsx files with the JSX unchanged
+react-jsx: Emit .js files with the JSX changed to _jsx calls
+
+4] noImplicitAny:- 
+in some cases where no type annotations are present, 
+TypeScript will fall back to a type of any for a variable when it cannot infer the type.
+
+4]sourceMap: true
+if webpack.config.js has 	devtool: 'eval-cheap-source-map' configured then app errors wont point to bundle.js.
+it will point to specific ts/tsx file.
+
+**/

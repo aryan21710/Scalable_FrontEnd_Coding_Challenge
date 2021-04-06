@@ -42,6 +42,7 @@ const Chart:()=>JSX.Element = () => {
             }
         });
 
+
         const data = {
             datasets,
             labels

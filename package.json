@@ -5,7 +5,7 @@
     "main": "index.tsx",
     "scripts": {
         "start": "webpack serve",
-        "build:dev": "webpack --watch",
+        "build:dev": "webpack",
         "test": "cypress run --browser chrome",
         "lint": "eslint . --fix && echo 'Lint Complete.'",
         "check-types": "tsc"
@@ -50,6 +50,7 @@
         "babel-polyfill": "^6.26.0",
         "babel-preset-es2015": "^6.24.1",
         "babel-preset-stage-0": "^6.24.1",
+        "clean-webpack-plugin": "^3.0.0",
         "copy-webpack-plugin": "4.6.0",
         "cypress": "^6.5.0",
         "eslint": "^7.21.0",
