@@ -10,7 +10,7 @@ import { IChartCordinates, ItimeSeriesForChart, ICone } from '../../common/inter
 
 const Chart:()=>JSX.Element = () => {
     const { riskLevel, cones, initialSum, monthlySum } = useContext(AppContext);
-    const canvasRef = useRef(null);
+    const canvasRef = useRef<HTMLCanvasElement | null>(null);
     useEffect(() => {
         cones.length > 0 && drawChart();
     }, []);
@@ -19,12 +19,12 @@ const Chart:()=>JSX.Element = () => {
         const { mu, sigma } = cones.filter((cone: ICone) => cone.riskLevel === riskLevel)[0];
 
         const timeSeries:ItimeSeriesForChart = calculateTimeSeries({
+            years: 10,
             mu,
             sigma,
-            years: 10,
+            fee: 0.01,
             initialSum,
             monthlySum,
-            fee: 0.01,
         })?.timeSeriesForChart;
 
         const labels = timeSeries.median.map((v: IChartCordinates, idx: number) => (idx % 12 == 0 ? idx / 12 : ''));
@@ -54,9 +54,10 @@ const Chart:()=>JSX.Element = () => {
             options: chartOptions,
         };
 
-        const canvas = canvasRef.current;
-        const context = canvas.getContext('2d');
-        new ChartJs(context, config);
+        if (canvasRef.current) {
+            const ctx : any = canvasRef.current?.getContext('2d');
+            new ChartJs(ctx, config);
+        }
 
     };
     return (

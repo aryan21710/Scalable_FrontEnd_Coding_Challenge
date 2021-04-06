@@ -6,8 +6,12 @@ import { ItimeSeries } from '../../common/interfaces';
 import GridDisplay from './GridDisplay';
 import { AppContext } from '../../context/appContext';
 
+
+
 const Table:()=>JSX.Element = () => {
-    const { cone, initialSum, monthlySum } = useContext(AppContext);
+    const { cone, initialSum, monthlySum }  = useContext(AppContext);
+    // eslint-disable-next-line no-console
+    console.log('cone, initialSum, monthlySum', cone, initialSum, monthlySum);
     const timeSeries: ItimeSeries[] = calculateTimeSeries({
         years: 10,
         mu: cone.mu,
