@@ -4,7 +4,6 @@ const webpack = require('webpack');
  It maintains the same dir structure while copying. Its not needed in this webpack configuration.
 **/
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const cones = require('./src/common/cones.json');
 
 module.exports = {
@@ -17,8 +16,7 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new CleanWebpackPlugin(),
-		new CopyWebpackPlugin([{ from: 'src/index.html' }]),
+		new CopyWebpackPlugin([{ from: 'public/index.html' }]),
 	],
 	devServer: {
 		port: 3000,
